@@ -1,0 +1,17 @@
+// Базовые стили
+@use "base/normalize";
+@use "base/fonts";
+@use "base/vars";
+@use "base/main";
+
+// Блоки
+@use "blocks/footer";
+@use "blocks/header";
+
+// Компоненты
+@use "components/button";
+@use "components/burger";
+
+// Библиотеки и их кастомизация
+// @use "../libs/magnific-popup/dist/magnific-popup.css";
+// @use '_custom-popup'; // Кастомизация стилей попапов

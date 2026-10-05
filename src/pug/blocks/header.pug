@@ -1,0 +1,53 @@
+header.header
+	.container-full
+		.header-top
+			a.header-top__logo(href="/")
+				img.header-top__img(src="/assets/images/logo.png", alt="Исцеление - медико-психологический центр")
+			.header-top__adress
+				span г. Ростов-на-Дону
+				span ул. Варфоломеева, 243
+				span ул. Варфоломеева, 243
+			.header-top__info
+				.header-top__work
+					svg.header-top__work-time(aria-label="График работы")
+						use(href="assets/icons/symbol/sprite.svg#time")
+					| Круглосуточно
+				.header-top__social.soc-btns
+					a.soc-btns__item.soc-btn(href="#" target="_blank" rel="noopener noreferrer" aria-label="Telegram")
+						svg.soc-btn__icon(aria-hidden="true") 
+							use(href="assets/icons/symbol/sprite.svg#tg")
+					a.soc-btns__item.soc-btn(href="#" target="_blank" rel="noopener noreferrer" aria-label="VK")
+						svg.soc-btn__icon(aria-hidden="true") 
+							use(href="assets/icons/symbol/sprite.svg#vk")
+					a.soc-btns__item.soc-btn(href="#" target="_blank" rel="noopener noreferrer" aria-label="Max")
+						svg.soc-btn__icon(aria-hidden="true") 
+							use(href="assets/icons/symbol/sprite.svg#max")
+						//- img.soc-btn__icon(src="", alt="")
+				.header-top__phones.ht-phones
+					a.ht-phones__item(href="tel:+78632327517") +7 (863) 232 75 17
+					a.ht-phones__item(href="tel:+79885368511") +7 (988) 536 85 11
+	.container-full
+		.header-bottom
+			nav.header-bottom__nav
+				ul.header-nav
+					li.header-nav__item
+						a.header-nav__link(href="#") Зависимости
+					li.header-nav__item
+						a.header-nav__link(href="#") Психотерапия
+					li.header-nav__item
+						a.header-nav__link(href="#") Подросткам
+					li.header-nav__item
+						a.header-nav__link(href="#") Пожилым пациентам
+					li.header-nav__item
+						a.header-nav__link(href="#") Форматы лечения
+					li.header-nav__item
+						a.header-nav__link(href="#") О клинике
+					li.header-nav__item
+						a.header-nav__link(href="#") Цены
+					li.header-nav__item
+						a.header-nav__link(href="#") Контакты
+
+			button.header-bottom__search
+				svg.header-bottom__search-icon(aria-label="Поиск") 
+					use(href="assets/icons/symbol/sprite.svg#search")
+			button.header-bottom__feedback.btn Заказать звонок

@@ -1,0 +1,552 @@
+@charset "UTF-8";
+/* Document
+ * ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+:where(html) {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+ * ========================================================================== */
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Edge, Firefox, and Safari.
+ */
+:where(h1) {
+  font-size: 2em;
+  margin-block-end: 0.67em;
+  margin-block-start: 0.67em;
+}
+
+/* Grouping content
+ * ========================================================================== */
+/**
+ * Remove the margin on nested lists in Chrome, Edge, and Safari.
+ */
+:where(dl, ol, ul) :where(dl, ol, ul) {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Correct the inheritance of border color in Firefox.
+ */
+:where(hr) {
+  box-sizing: content-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  height: 0;
+  /* 1 */
+}
+
+/* Text-level semantics
+ * ========================================================================== */
+/**
+ * Add the correct text decoration in Safari.
+ */
+:where(abbr[title]) {
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+:where(b, strong) {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+:where(code, kbd, pre, samp) {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+:where(small) {
+  font-size: 80%;
+}
+
+/* Tabular data
+ * ========================================================================== */
+/**
+ * 1. Correct table border color in Chrome, Edge, and Safari.
+ * 2. Remove text indentation from table contents in Chrome, Edge, and Safari.
+ */
+:where(table) {
+  border-color: currentColor;
+  /* 1 */
+  text-indent: 0;
+  /* 2 */
+}
+
+/* Forms
+ * ========================================================================== */
+/**
+ * Remove the margin on controls in Safari.
+ */
+:where(button, input, select) {
+  margin: 0;
+}
+
+/**
+ * Remove the inheritance of text transform in Firefox.
+ */
+:where(button) {
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style buttons in iOS and Safari.
+ */
+:where(button, input:is([type=button i], [type=reset i], [type=submit i])) {
+  -webkit-appearance: button;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Edge, and Firefox.
+ */
+:where(progress) {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the inheritance of text transform in Firefox.
+ */
+:where(select) {
+  text-transform: none;
+}
+
+/**
+ * Remove the margin in Firefox and Safari.
+ */
+:where(textarea) {
+  margin: 0;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome, Edge, and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+:where(input[type=search i]) {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Safari.
+ */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * Remove the inner padding in Chrome, Edge, and Safari on macOS.
+ */
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style upload buttons in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding of focus outlines in Firefox.
+ */
+:where(button, input:is([type=button i], [type=color i], [type=reset i], [type=submit i]))::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus outline styles unset by the previous rule in Firefox.
+ */
+:where(button, input:is([type=button i], [type=color i], [type=reset i], [type=submit i]))::-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Remove the additional :invalid styles in Firefox.
+ */
+:where(:-moz-ui-invalid) {
+  box-shadow: none;
+}
+
+/* Interactive
+ * ========================================================================== */
+/*
+ * Add the correct styles in Safari.
+ */
+:where(dialog) {
+  background-color: white;
+  border: solid;
+  color: black;
+  height: -moz-fit-content;
+  height: fit-content;
+  left: 0;
+  margin: auto;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+:where(dialog:not([open])) {
+  display: none;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+:where(summary) {
+  display: list-item;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../assets/fonts/Manrope-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../assets/fonts/Manrope-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../assets/fonts/Manrope-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../assets/fonts/Manrope-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../assets/fonts/Manrope-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --color-text: #3E3E40;
+  --color-accent: #2196f3;
+}
+
+html {
+  box-sizing: border-box;
+  text-rendering: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  scrollbar-gutter: stable;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Manrope, system-ui;
+  font-size: 18px;
+  color: #222;
+  font-weight: 400;
+  line-height: 1.5;
+  /*Перенос длинных слов*/
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+body.toggle {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1468px;
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+.container-full {
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1820px;
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .container-full {
+    padding: 0 15px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-accent);
+}
+a:not([class]) {
+  text-decoration: underline;
+  color: var(--color-text);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.section-title {
+  margin-top: 0;
+  font-size: 3.2rem;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2.4rem;
+  line-height: 1.16;
+  font-weight: 600;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+input::-moz-placeholder {
+  color: red;
+}
+
+input::placeholder {
+  color: red;
+}
+
+footer {
+  margin-top: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #242424;
+  color: #fff;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: #fafafa;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top__logo {
+  flex-shrink: 0;
+}
+
+.header-top__img {
+  display: block;
+  height: 64px;
+}
+
+.header-top__adress span {
+  padding-right: 16px;
+  padding-left: 16px;
+  border-right: 1px solid rgba(34, 34, 34, 0.2);
+}
+.header-top__adress span:first-child {
+  padding-left: 0;
+}
+.header-top__adress span:last-child {
+  padding-right: 0;
+  border: none;
+}
+
+.header-top__info {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.header-top__work {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #02ad4a;
+}
+
+.header-top__work-time {
+  display: block;
+  height: 32px;
+  width: 32px;
+}
+
+.soc-btns {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.soc-btn {
+  display: inline-flex;
+}
+
+.soc-btn__icon {
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+
+.ht-phones__item {
+  padding-right: 16px;
+  padding-left: 16px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #222;
+  border-left: 1px solid rgba(34, 34, 34, 0.2);
+}
+.ht-phones__item:first-child {
+  padding-left: 0;
+  border: none;
+}
+.ht-phones__item:last-child {
+  padding-right: 0;
+}
+
+.button {
+  display: inline-flex;
+  padding: 14px 25px;
+  color: #fff;
+  text-decoration: none;
+  background: #2196f3;
+  border-radius: 16px;
+}
+
+.burger__menu-btn {
+  position: relative;
+  min-height: 40px;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+.burger__menu-btn span {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  z-index: 25;
+  display: block;
+  width: 12px;
+  height: 2px;
+  transition: 0.25s;
+  background-color: var(--color-text);
+  pointer-events: none;
+}
+.burger__menu-btn span::before, .burger__menu-btn span::after {
+  display: block;
+  width: 18px;
+  height: 2px;
+  content: "";
+  transition: 0.25s;
+  background-color: var(--color-text);
+}
+.burger__menu-btn span::before {
+  transform: translateY(7px);
+}
+.burger__menu-btn span::after {
+  transform: translateY(-9px);
+}
+.burger__menu-btn.toggle span {
+  width: 0;
+}
+.burger__menu-btn.toggle span::before {
+  transform: translateY(0) rotate(45deg);
+}
+.burger__menu-btn.toggle span::after {
+  transform: translateY(-2px) rotate(-45deg);
+}
+/*# sourceMappingURL=main.min.css.map */

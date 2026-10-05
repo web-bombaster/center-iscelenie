@@ -1,0 +1,28 @@
+- var pageType = 'home';
+//- Для pageType указать тип страницы. Варианты:
+	home - главная страница
+	about - страница о нас
+
+doctype html
+html(lang="ru-RU")
+	include ../blocks/head
+	body#top
+
+
+		include ../blocks/header
+		//- home - главная страница
+		if pageType === 'home'
+			//- include ../blocks/main-home
+
+		//- about - страница о нас
+		if pageType === 'about'
+			include ../blocks/breadcrumbs
+			include ../blocks/main-about
+
+
+		include ../blocks/footer
+		include ../blocks/hidden
+
+
+		//- Подключаем скрипты и стили
+		include ../blocks/sourse

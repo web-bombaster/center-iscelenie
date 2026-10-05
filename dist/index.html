@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&laquo;Исцеление&raquo;&nbsp;&mdash; медико-психологический центр</title>
+    <link href="css/main.min.css" rel="stylesheet">
+  </head>
+  <body id="top">
+    <header class="header">
+      <div class="container-full">
+        <div class="header-top"><a class="header-top__logo" href="/"><img class="header-top__img" src="/assets/images/logo.png" alt="Исцеление - медико-психологический центр"></a>
+          <div class="header-top__adress"><span>г. Ростов-на-Дону</span><span>ул. Варфоломеева, 243</span><span>ул. Варфоломеева, 243</span></div>
+          <div class="header-top__info">
+            <div class="header-top__work">
+              <svg class="header-top__work-time" aria-label="График работы">
+                <use href="assets/icons/symbol/sprite.svg#time"></use>
+              </svg>Круглосуточно
+            </div>
+            <div class="header-top__social soc-btns"><a class="soc-btns__item soc-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                <svg class="soc-btn__icon" aria-hidden="true"> 
+                  <use href="assets/icons/symbol/sprite.svg#tg"></use>
+                </svg></a><a class="soc-btns__item soc-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="VK">
+                <svg class="soc-btn__icon" aria-hidden="true"> 
+                  <use href="assets/icons/symbol/sprite.svg#vk"></use>
+                </svg></a><a class="soc-btns__item soc-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="Max">
+                <svg class="soc-btn__icon" aria-hidden="true"> 
+                  <use href="assets/icons/symbol/sprite.svg#max"></use>
+                </svg></a></div>
+            <div class="header-top__phones ht-phones"><a class="ht-phones__item" href="tel:+78632327517">+7 (863) 232 75 17</a><a class="ht-phones__item" href="tel:+79885368511">+7 (988) 536 85 11</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-full">
+        <div class="header-bottom">
+          <nav class="header-bottom__nav">
+            <ul class="header-nav">
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Зависимости</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Психотерапия</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Подросткам</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Пожилым пациентам</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Форматы лечения</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">О клинике</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Цены</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <button class="header-bottom__search">
+            <svg class="header-bottom__search-icon" aria-label="Поиск"> 
+              <use href="assets/icons/symbol/sprite.svg#search"></use>
+            </svg>
+          </button>
+          <button class="header-bottom__feedback btn">Заказать звонок</button>
+        </div>
+      </div>
+    </header>
+    <footer>
+      <div class="container">
+        <p>© 2026 My Site</p>
+      </div>
+    </footer>
+    <div class="hidden">
+      <form class="form" id="zayavka2">
+        <h3 class="text-center">Оставить заявку</h3>
+        <div class="before name">
+          <input class="jsFormText" name="name" type="text" value="" placeholder="Ваше имя" required="">
+        </div>
+        <div class="before phone">
+          <input class="jsFormPhone" id="af_phone" name="phone" type="tel" value="" placeholder="Контактный телефон" required="">
+        </div>
+        <div class="before mail">
+          <input class="jsFormMail" name="mail" type="email" value="" placeholder="Ваш Email" required="">
+        </div>
+        <div class="before comment">
+          <textarea class="jsFormText" name="comment" placeholder="Ваше сообщение"></textarea>
+        </div>
+        <label class="control-label polytic" for="zayavka2-polytic">
+          <input class="polytic jsFormCheckbox" id="zayavka2-polytic" name="soglasie" type="checkbox" value="yes" required="">Даю согласие на обработку моих персональных данных на условиях, указанных в &#32;<a href="#">Политике конфиденциальности</a>
+        </label>
+        <button class="btn submit" name="submit" type="button">Отправить</button>
+      </form>
+    </div>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

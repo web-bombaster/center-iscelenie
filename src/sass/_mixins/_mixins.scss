@@ -1,0 +1,7 @@
+@use "sass:math";
+
+@use "./../vars";
+
+@mixin pix-to-rem($px) {
+    font-size: math.div($px, vars.$font-size-default) * 1rem;
+}

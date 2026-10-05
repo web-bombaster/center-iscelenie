@@ -1,0 +1,105 @@
+
+.header {
+	padding-top: 24px;
+	padding-bottom: 24px;
+	background-color: #fafafa;
+}
+
+.container-full {}
+
+.header-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-top__logo {
+	flex-shrink: 0;
+}
+
+.header-top__img {
+	display: block;
+	height: 64px;
+}
+
+.header-top__adress {
+	span {
+		padding-right: 16px;
+		padding-left: 16px;
+		border-right: 1px solid rgba(34, 34, 34, 0.2);
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-right: 0;
+			border: none;
+		}
+	}
+}
+
+.header-top__info {
+	display: flex;
+	gap: 40px;
+	align-items: center;
+}
+ 
+.header-top__work {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #02ad4a;
+}
+
+.header-top__work-time {
+	display: block;
+	height: 32px;
+	width: 32px;	
+}
+
+.header-top__social {}
+
+.header-top__phones {}
+
+.svg {}
+
+.soc-btns {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+
+.soc-btns__item {}
+
+.soc-btn {
+	display: inline-flex;
+}
+
+.soc-btn__icon {
+	display: block;
+	height: 40px;
+	width: 40px;
+}
+
+.ht-phones {}
+
+.ht-phones__item {
+	padding-right: 16px;
+	padding-left: 16px;
+	font-weight: 500;
+	font-size: 20px;
+	color: #222;
+	border-left: 1px solid rgba(34, 34, 34, 0.2);
+
+	&:first-child {
+		padding-left: 0;
+		border: none;
+	}
+
+	&:last-child {
+		padding-right: 0;
+	}
+}
