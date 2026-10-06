@@ -1,8 +1,21 @@
-.button {
-	display: inline-flex;
-	padding: 14px 25px;
+.btn {
+	padding: 17px 26px 15px 26px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.1;
+	text-transform: uppercase;
 	color: #fff;
-	text-decoration: none;
-	background: #2196f3;
-	border-radius: 16px;
+	border-radius: 100px;
+	background-color: #02ad4a;
+	border: none;
+	cursor: pointer;
+	transition: all 0.25s;
+
+	@media screen and (max-width: 768px) {
+		font-size: 16px;
+	}
+
+	&:hover {
+		background-color: #059c44;
+	}
 }

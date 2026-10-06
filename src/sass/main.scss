@@ -7,9 +7,12 @@
 // Блоки
 @use "blocks/footer";
 @use "blocks/header";
+@use "blocks/hero";
+@use "blocks/advantages";
 
 // Компоненты
 @use "components/button";
+@use "components/btn-arrow";
 @use "components/burger";
 
 // Библиотеки и их кастомизация

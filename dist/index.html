@@ -10,6 +10,7 @@
     <header class="header">
       <div class="header-top">
         <div class="container-full header-top__container"><a class="header-top__logo" href="/"><img class="header-top__img" src="/assets/images/logo.png" alt="Исцеление - медико-психологический центр"></a>
+          <button class="header-top__burger burger" type="button" aria-label="Меню сайта"><span class="burger-line"></span><span class="burger-title">Меню</span></button>
           <div class="header-top__adress"><span>г. Ростов-на-Дону</span><span>ул. Варфоломеева, 243</span><span>ул. Варфоломеева, 243</span></div>
           <div class="header-top__info">
             <div class="header-top__work">
@@ -35,12 +36,82 @@
         <div class="container-full header-bottom__container">
           <nav class="header-bottom__nav">
             <ul class="header-nav">
-              <li class="header-nav__item"><a class="header-nav__link" href="#">Зависимости</a></li>
-              <li class="header-nav__item"><a class="header-nav__link" href="#">Психотерапия</a></li>
+              <li class="header-nav__item header-nav__item--has-submenu"><a class="header-nav__link" href="#">Зависимости</a>
+                <div class="header-nav__panel-submenu">
+                  <div class="container-full">
+                    <ul class="header-nav__submenu header-nav__submenu--1lvl">
+                      <li class="header-nav__item header-nav__item--has-submenu"><a class="header-nav__link" href="#">Лечение алкоголизма</a>
+                        <ul class="header-nav__submenu header-nav__submenu--2lvl">
+                          <li class="header-nav__item"><a class="header-nav__link" href="#">Обрыв запоя</a></li>
+                          <li class="header-nav__item"><a class="header-nav__link" href="#">Купирование алкогольного абстинентного синдрома</a></li>
+                          <li class="header-nav__item"><a class="header-nav__link" href="#">Лечение алкогольных психозов</a></li>
+                        </ul>
+                      </li>
+                      <li class="header-nav__item header-nav__item--has-submenu"><a class="header-nav__link" href="#">Помощь наркозависимым</a>
+                        <ul class="header-nav__submenu header-nav__submenu--2lvl">
+                          <li class="header-nav__item"><a class="header-nav__link" href="#">Обрыв запоя2</a></li>
+                          <li class="header-nav__item"><a class="header-nav__link" href="#">Купирование алкогольного абстинентного синдрома2</a></li>
+                          <li class="header-nav__item"><a class="header-nav__link" href="#">Лечение алкогольных психозов2</a></li>
+                        </ul>
+                      </li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Лечение игровой зависимости (лудомании)</a></li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Помощь созависимым и родственникам</a></li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Зависимость у подростков</a></li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Мотивация и интервенция</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="header-nav__item header-nav__item--has-submenu"><a class="header-nav__link" href="#">Психотерапия</a>
+                <div class="header-nav__panel-submenu">
+                  <div class="container-full">
+                    <ul class="header-nav__submenu header-nav__submenu--1lvl">
+                      <li class="header-nav__item header-nav__item--has-submenu"><a class="header-nav__link" href="#">Расстройства настроения</a>
+                        <ul class="header-nav__submenu header-nav__submenu--2lvl">
+                          <li class="header-nav__item"><a class="header-nav__link" href="#">Эмоционально-лабильное расстройство личности (ПРЛ)</a></li>
+                          <li class="header-nav__item"><a class="header-nav__link" href="#">Другие расстройства личности</a></li>
+                        </ul>
+                      </li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Тревожные расстройства</a></li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Психотические расстройства</a></li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Неврозы</a></li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Расстройства пищевого поведения</a></li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Стресс и кризисные состояния</a></li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Психосоматика</a></li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Семейная и супружеская психотерапия</a></li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Расстройства личности</a></li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Пациенты с «двойным диагнозом»</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
               <li class="header-nav__item"><a class="header-nav__link" href="#">Подросткам</a></li>
               <li class="header-nav__item"><a class="header-nav__link" href="#">Пожилым пациентам</a></li>
               <li class="header-nav__item"><a class="header-nav__link" href="#">Форматы лечения</a></li>
-              <li class="header-nav__item"><a class="header-nav__link" href="#">О клинике</a></li>
+              <li class="header-nav__item header-nav__item--has-submenu"><a class="header-nav__link" href="#">О клинике</a>
+                <div class="header-nav__panel-submenu">
+                  <div class="container-full">
+                    <ul class="header-nav__submenu header-nav__submenu--1lvl">
+                      <li class="header-nav__item header-nav__item--has-submenu"><a class="header-nav__link" href="#">О нас</a>
+                        <ul class="header-nav__submenu header-nav__submenu--2lvl">
+                          <li class="header-nav__item"><a class="header-nav__link" href="#">Разрешающие документы</a></li>
+                          <li class="header-nav__item"><a class="header-nav__link" href="#">Программа государственный гарантий</a></li>
+                          <li class="header-nav__item"><a class="header-nav__link" href="#">Контролирующие органы</a></li>
+                          <li class="header-nav__item"><a class="header-nav__link" href="#">Юридическая информация</a></li>
+                        </ul>
+                      </li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Партнеры</a></li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Вакансии</a></li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Отзывы</a></li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Фотогалерея</a></li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Оплата</a></li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Новости</a></li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Вопрос-ответ</a></li>
+                      <li class="header-nav__item"><a class="header-nav__link" href="#">Документация</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
               <li class="header-nav__item"><a class="header-nav__link" href="#">Цены</a></li>
               <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
             </ul>
@@ -54,9 +125,102 @@
         </div>
       </div>
     </header>
-    <footer>
-      <div class="container">
-        <p>© 2026 My Site</p>
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-box">
+          <div class="hero-tags"><span class="hero-tag">Круглосуточно</span><span class="hero-tag">Лицензия</span><span class="hero-tag">Анонимность</span><span class="hero-tag">Стационар</span></div>
+          <h1 class="h1 hero-title">Помощь при зависимостях и психических расстройствах в Ростове-на-Дону</h1>
+          <div class="hero-descr">Медико-психологический центр (МПЦ) «Исцеление» — это безопасное пространство, где каждый пациент получает квалифицированную медицинскую и психотерапевтическую поддержку. Помощь опытных психиатров, психотерапевтов и наркологов в комфортных условиях современного стационара. Мы возвращаем радость к жизни.</div>
+          <button class="hero-btn btn-arrow">Получить консультацию</button>
+        </div>
+      </div>
+    </section>
+    <div class="advantages">
+      <div class="advantages-container container">
+        <div class="advantages-list">
+          <div class="advantages-item"><span class="advantages-item__icon"></span><span class="advantages-item__title">Полная анонимность</span>
+            <p class="advantages-item__descr">Мы гарантируем конфиденциальность каждому обратившемуся пациенту</p>
+          </div>
+          <div class="advantages-item"><span class="advantages-item__icon"></span><span class="advantages-item__title">Индивидуальный подход</span>
+            <p class="advantages-item__descr">Схема терапии определяется только после глубокого изучения анамнеза</p>
+          </div>
+          <div class="advantages-item"><span class="advantages-item__icon"></span><span class="advantages-item__title">Опытные врачи</span>
+            <p class="advantages-item__descr">Наши специалисты имеют стаж работы более 15 лет в области психиатрии и наркологии</p>
+          </div>
+          <div class="advantages-item"><span class="advantages-item__icon"></span><span class="advantages-item__title">Семинары и открытые дни</span>
+            <p class="advantages-item__descr">Регулярно проводим мини-лекции и разъяснительные беседы</p>
+          </div>
+          <div class="advantages-item"><span class="advantages-item__icon"></span><span class="advantages-item__title">Лояльная ценовая политика</span>
+            <p class="advantages-item__descr">Гибкий подход к оплате лечения, потому что наша цель — помочь пациенту</p>
+          </div>
+          <div class="advantages-item"><span class="advantages-item__icon"></span><span class="advantages-item__title">Группы для родственников</span>
+            <p class="advantages-item__descr">Бесплатные группы для нормализации и восстановления отношений в семье</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sections-column"> </div>
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-grid">
+          <div class="footer-col__box">
+            <div class="footer-col-bl">
+              <div class="footer-bl"><a class="footer-bl__title" href="#">зависимости</a>
+                <div class="footer-bl__items"><a class="footer-bl__item" href="#">Помощь наркозависимым</a><a class="footer-bl__item" href="#">Лечение игровой зависимости (лудомании)</a><a class="footer-bl__item" href="#">Помощь созависимым и родственникам</a><a class="footer-bl__item" href="#">Зависимость у подростков</a><a class="footer-bl__item" href="#">Мотивация и интервенция</a></div>
+              </div>
+              <div class="footer-bl"><a class="footer-bl__title" href="#">пожилым пациентам</a>
+                <div class="footer-bl__items"><a class="footer-bl__item" href="#">Деменция</a><a class="footer-bl__item" href="#">Болезнь Альцгеймера</a></div>
+              </div>
+              <div class="footer-bl"><a class="footer-bl__title" href="#">подросткам</a>
+                <div class="footer-bl__items"><a class="footer-bl__item" href="#">Расстройства аутического спектра</a><a class="footer-bl__item" href="#">Детские депрессии и тревожные расстройства</a><a class="footer-bl__item" href="#">СДВГ</a><a class="footer-bl__item" href="#">РПП у подростков</a><a class="footer-bl__item" href="#">Детско-родительские отношения</a></div>
+              </div>
+            </div>
+            <div class="footer-col-bl">
+              <div class="footer-bl"><a class="footer-bl__title" href="#">психотерапия</a>
+                <div class="footer-bl__items"><a class="footer-bl__item" href="#">Расстройства настроения</a><a class="footer-bl__item" href="#">Тревожные расстройства</a><a class="footer-bl__item" href="#">Психотические расстройства</a><a class="footer-bl__item" href="#">Неврозы</a><a class="footer-bl__item" href="#">Расстройства пищевого поведения</a><a class="footer-bl__item" href="#">Стресс и кризисные состояния</a><a class="footer-bl__item" href="#">Психосоматика</a><a class="footer-bl__item" href="#">Семейная и супружеская психотерапия</a><a class="footer-bl__item" href="#">Расстройства личности</a><a class="footer-bl__item" href="#">Пациенты с «двойным диагнозом»</a></div>
+              </div>
+              <div class="footer-bl"><a class="footer-bl__title" href="#">форматы лечения</a>
+                <div class="footer-bl__items"><a class="footer-bl__item" href="#">Круглосуточный стационар</a><a class="footer-bl__item" href="#">Дневной стационар</a><a class="footer-bl__item" href="#">Амбулаторное лечение</a></div>
+              </div>
+            </div>
+          </div>
+          <nav class="footer-nav"><a class="footer-nav__item" href="#">О клинике</a><a class="footer-nav__item" href="#">Цены</a><a class="footer-nav__item" href="#">специалисты</a><a class="footer-nav__item" href="#">новости</a><a class="footer-nav__item" href="#">контакты</a><a class="footer-nav__item" href="#">документация</a></nav>
+          <div class="footer-info">
+            <div class="footer-info__top"><img class="footer-logo" src="/assets/images/footer-logo.png" alt="">
+              <p class="footer-descr">Лечебно-реабилитационный центр «Исцеление» — психиатрическая и наркологическая помощь в Ростове-на-Дону. Работаем круглосуточно, анонимно.</p>
+              <button class="btn footer-btn">получить консультацию</button>
+            </div>
+            <div class="footer-phons"><a class="footer-phone" href="tel:+78632327517">+7 (863) 232 75 17</a><a class="footer-phone" href="tel:+79885368511">+7 (988) 536 85 11</a></div>
+            <div class="footer-social soc-btns"><a class="soc-btns__item soc-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                <svg class="soc-btn__icon" aria-hidden="true"> 
+                  <use href="assets/icons/symbol/sprite.svg#tg"></use>
+                </svg></a><a class="soc-btns__item soc-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="VK">
+                <svg class="soc-btn__icon" aria-hidden="true"> 
+                  <use href="assets/icons/symbol/sprite.svg#vk"></use>
+                </svg></a><a class="soc-btns__item soc-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="Max">
+                <svg class="soc-btn__icon" aria-hidden="true"> 
+                  <use href="assets/icons/symbol/sprite.svg#max"></use>
+                </svg></a></div>
+            <div class="footer-text">
+              <div class="footer-text__block">
+                <p><span>Режим работы:</span>Круглосуточно</p>
+                <p><span>Email:</span><a href="mailto:почта@yandex.ru">почта@yandex.ru</a></p>
+              </div>
+              <div class="footer-text__block">
+                <p><span>г. Ростов-на-Дону</span></p>
+                <p>ул. Варфоломеева, 243</p>
+                <p>ул. Варфоломеева, 243</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-map"></div>
+          <div class="footer-bottom">Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации. Информация о ценах носит уведомительный характер. Стоимость медицинских услуг определяется после очной консультации у специалистов. Действующий прейскурант, заверенный печатью и подписью руководителя, находится на информационном стенде Клиники. Деятельность организации осуществляется на основании действующей лицензии, выданной Департаментом Здравоохранения РФ. Ссылка  на выписку из реестра.
+            <div class="footer-bottom__box">
+              <div class="footer-bottom__list"><span>ООО «МПЦ «Исцеление»</span><span>ИНН 6165101393</span><span>ОГРН 1026103707838 от 23 июля 2002 г.</span></div>
+              <div class="footer-bottom__list"><a href="#">Политика конфиденциальности</a><a href="#">Политика обработки персональных данных</a></div>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
     <div class="hidden">

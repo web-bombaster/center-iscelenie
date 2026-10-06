@@ -3,6 +3,10 @@ header.header
 		.container-full.header-top__container
 			a.header-top__logo(href="/")
 				img.header-top__img(src="/assets/images/logo.png", alt="Исцеление - медико-психологический центр")
+			button.header-top__burger.burger(type='button' aria-label='Меню сайта')
+				span.burger-line
+				span.burger-title Меню
+
 			.header-top__adress
 				span г. Ростов-на-Дону
 				span ул. Варфоломеева, 243
@@ -30,18 +34,110 @@ header.header
 		.container-full.header-bottom__container
 			nav.header-bottom__nav
 				ul.header-nav
-					li.header-nav__item
+					li.header-nav__item.header-nav__item--has-submenu
 						a.header-nav__link(href="#") Зависимости
-					li.header-nav__item
+						.header-nav__panel-submenu
+							.container-full
+								ul.header-nav__submenu.header-nav__submenu--1lvl
+									li.header-nav__item.header-nav__item--has-submenu
+										a.header-nav__link(href="#") Лечение алкоголизма
+										ul.header-nav__submenu.header-nav__submenu--2lvl
+											li.header-nav__item
+												a.header-nav__link(href="#") Обрыв запоя
+											li.header-nav__item
+												a.header-nav__link(href="#") Купирование алкогольного абстинентного синдрома
+											li.header-nav__item
+												a.header-nav__link(href="#") Лечение алкогольных психозов
+									li.header-nav__item.header-nav__item--has-submenu
+										a.header-nav__link(href="#") Помощь наркозависимым
+										ul.header-nav__submenu.header-nav__submenu--2lvl
+											li.header-nav__item
+												a.header-nav__link(href="#") Обрыв запоя2
+											li.header-nav__item
+												a.header-nav__link(href="#") Купирование алкогольного абстинентного синдрома2
+											li.header-nav__item
+												a.header-nav__link(href="#") Лечение алкогольных психозов2
+									li.header-nav__item
+										a.header-nav__link(href="#") Лечение игровой зависимости (лудомании)
+									li.header-nav__item
+										a.header-nav__link(href="#") Помощь созависимым и родственникам
+									li.header-nav__item
+										a.header-nav__link(href="#") Зависимость у подростков
+									li.header-nav__item
+										a.header-nav__link(href="#") Мотивация и интервенция
+
+					li.header-nav__item.header-nav__item--has-submenu
 						a.header-nav__link(href="#") Психотерапия
+						.header-nav__panel-submenu
+							.container-full
+								ul.header-nav__submenu.header-nav__submenu--1lvl
+									li.header-nav__item.header-nav__item--has-submenu
+										a.header-nav__link(href="#") Расстройства настроения
+										ul.header-nav__submenu.header-nav__submenu--2lvl
+											li.header-nav__item
+												a.header-nav__link(href="#") Эмоционально-лабильное расстройство личности (ПРЛ)
+											li.header-nav__item
+												a.header-nav__link(href="#") Другие расстройства личности
+									li.header-nav__item
+										a.header-nav__link(href="#") Тревожные расстройства
+									li.header-nav__item
+										a.header-nav__link(href="#") Психотические расстройства
+									li.header-nav__item
+										a.header-nav__link(href="#") Неврозы
+									li.header-nav__item
+										a.header-nav__link(href="#") Расстройства пищевого поведения
+									li.header-nav__item
+										a.header-nav__link(href="#") Стресс и кризисные состояния
+									li.header-nav__item
+										a.header-nav__link(href="#") Психосоматика
+									li.header-nav__item
+										a.header-nav__link(href="#") Семейная и супружеская психотерапия
+									li.header-nav__item
+										a.header-nav__link(href="#") Расстройства личности
+									li.header-nav__item
+										a.header-nav__link(href="#") Пациенты с «двойным диагнозом»
+
+
 					li.header-nav__item
 						a.header-nav__link(href="#") Подросткам
 					li.header-nav__item
 						a.header-nav__link(href="#") Пожилым пациентам
+
 					li.header-nav__item
 						a.header-nav__link(href="#") Форматы лечения
-					li.header-nav__item
+					li.header-nav__item.header-nav__item--has-submenu
 						a.header-nav__link(href="#") О клинике
+						.header-nav__panel-submenu
+							.container-full
+								ul.header-nav__submenu.header-nav__submenu--1lvl
+									li.header-nav__item.header-nav__item--has-submenu
+										a.header-nav__link(href="#") О нас
+										ul.header-nav__submenu.header-nav__submenu--2lvl
+											li.header-nav__item
+												a.header-nav__link(href="#") Разрешающие документы
+											li.header-nav__item
+												a.header-nav__link(href="#") Программа государственный гарантий
+											li.header-nav__item
+												a.header-nav__link(href="#") Контролирующие органы
+											li.header-nav__item
+												a.header-nav__link(href="#") Юридическая информация
+									li.header-nav__item
+										a.header-nav__link(href="#") Партнеры
+									li.header-nav__item
+										a.header-nav__link(href="#") Вакансии
+									li.header-nav__item
+										a.header-nav__link(href="#") Отзывы
+									li.header-nav__item
+										a.header-nav__link(href="#") Фотогалерея
+									li.header-nav__item
+										a.header-nav__link(href="#") Оплата
+									li.header-nav__item
+										a.header-nav__link(href="#") Новости
+									li.header-nav__item
+										a.header-nav__link(href="#") Вопрос-ответ
+									li.header-nav__item
+										a.header-nav__link(href="#") Документация
+
 					li.header-nav__item
 						a.header-nav__link(href="#") Цены
 					li.header-nav__item
