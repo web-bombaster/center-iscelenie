@@ -10,6 +10,8 @@
 	background-image: url('../assets/images/hero.jpg');
 
 	@media screen and (max-width: 768px) {
+		padding-top: 40px;
+		padding-bottom: 40px;
 		height: auto;
 	}
 }
@@ -30,6 +32,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 4px;
+
+	@media screen and (max-width: 768px) {
+		margin-bottom: 20px;
+	}
 }
 
 .hero-tag {
@@ -48,10 +54,18 @@
 
 .hero-title {
 	margin-bottom: 20px;
+
+	@media screen and (max-width: 768px) {
+		margin-bottom: 10px;
+	}
 }
 
 .hero-descr {
 	margin-bottom: 64px;
+
+	@media screen and (max-width: 768px) {
+		margin-bottom: 40px;
+	}
 }
 
 .hero-btn {}

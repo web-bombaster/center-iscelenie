@@ -1,0 +1,20 @@
+.qa
+	.qa-container.container
+		.qa-box
+			.qa-text
+				h2.h1 Сделайте первый шаг к&nbsp;здоровой жизни уже сегодня!
+				p.qa-descr Оставьте свои контактные данные. Наш специалист перезвонит вам в ближайшее время, ответит на все вопросы и поможет подобрать удобное время для визита в центр
+			form.qa-form.callback-form(action="/callback/", method="post")
+				input(class="callback-form__input", type="text", name="name", placeholder="Имя *", autocomplete="name", required)
+				input(class="callback-form__input", type="tel", name="phone", placeholder="+7 (___) ___-__-__", autocomplete="tel", required)
+				div(class="callback-form__agreement")
+					label(class="callback-form__checkbox")
+						input(class="callback-form__checkbox-input visually-hidden", type="checkbox", name="agreement", required)
+						span(class="checkbox__box", aria-hidden="true")
+						span(class="callback-form__checkbox-text")
+							a(href="/privacy/", target="_blank")
+								| Согласие на обработку
+							|  
+							| персональных данных
+				button(class="callback-form__submit btn", type="submit")
+					| Заказать звонок
