@@ -1,0 +1,17 @@
+.soc-btns {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.soc-btns__item {}
+
+.soc-btn {
+	display: inline-flex;
+}
+
+.soc-btn__icon {
+	display: block;
+	width: 40px;
+	height: 40px;
+}

@@ -1,0 +1,42 @@
+.mobile-menu
+	
+	form.mobile-menu__search.mm-search(action='/search/' method='get')
+		label.mm-search__label
+			span.visually-hidden Поиск по сайту
+			input.mm-search__input(type='search' name='q' placeholder='Услуга, направление, врач...')
+		button.mm-search__button(type='submit' aria-label='Найти')
+			svg.mm-search__icon(width='20' height='20' aria-hidden='true')
+				use(href="assets/icons/symbol/sprite.svg#search")
+	
+	.mobile-menu__wrapper
+		.mobile-menu__wrapper-box
+			
+			//- .mobile-menu__box
+			include multi-level-menu
+			
+			button.header-bottom__feedback.btn.mobile-menu__btn Заказать звонок
+			
+			.mobile-menu__info.mm-info
+			.header-top__work
+				svg.header-top__work-time(aria-label="График работы")
+					use(href="assets/icons/symbol/sprite.svg#time")
+				| Круглосуточно
+			.mm-info__phones
+				a.mm-info__phone(href="tel:+78632327517") +7 (863) 232 75 17
+				a.mm-info__phone(href="tel:+79885368511") +7 (988) 536 85 11
+			.mm-info__text
+				p
+					span г. Ростов-на-Дону
+				p ул. Варфоломеева, 243
+				p ул. Варфоломеева, 243
+
+			.mm-info__social.soc-btns
+				a.soc-btns__item.soc-btn(href="#" target="_blank" rel="noopener noreferrer" aria-label="Telegram")
+					svg.soc-btn__icon(aria-hidden="true") 
+						use(href="assets/icons/symbol/sprite.svg#tg")
+				a.soc-btns__item.soc-btn(href="#" target="_blank" rel="noopener noreferrer" aria-label="VK")
+					svg.soc-btn__icon(aria-hidden="true") 
+						use(href="assets/icons/symbol/sprite.svg#vk")
+				a.soc-btns__item.soc-btn(href="#" target="_blank" rel="noopener noreferrer" aria-label="Max")
+					svg.soc-btn__icon(aria-hidden="true") 
+						use(href="assets/icons/symbol/sprite.svg#max")

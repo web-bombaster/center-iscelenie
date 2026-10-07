@@ -10,7 +10,7 @@
     <header class="header">
       <div class="header-top">
         <div class="container-full header-top__container"><a class="header-top__logo" href="/"><img class="header-top__img" src="/assets/images/logo.png" alt="Исцеление - медико-психологический центр"></a>
-          <button class="header-top__burger burger" type="button" aria-label="Меню сайта"><span class="burger-line"></span><span class="burger-title">Меню</span></button>
+          <button class="header-top__burger burger jsMobileMenuBtnToggle" type="button" aria-label="Меню сайта"><span class="burger-line"></span><span class="burger-title">Меню</span></button>
           <div class="header-top__adress"><span>г. Ростов-на-Дону</span><span>ул. Варфоломеева, 243</span><span>ул. Варфоломеева, 243</span></div>
           <div class="header-top__info">
             <div class="header-top__work">
@@ -186,7 +186,7 @@
           </div>
           <nav class="footer-nav"><a class="footer-nav__item" href="#">О клинике</a><a class="footer-nav__item" href="#">Цены</a><a class="footer-nav__item" href="#">специалисты</a><a class="footer-nav__item" href="#">новости</a><a class="footer-nav__item" href="#">контакты</a><a class="footer-nav__item" href="#">документация</a></nav>
           <div class="footer-info">
-            <div class="footer-info__top"><img class="footer-logo" src="/assets/images/footer-logo.png" alt="">
+            <div class="footer-info__top"><a class="footer-logo" href="/"> <img class="footer-logo__img" src="/assets/images/footer-logo.png" alt=""></a>
               <p class="footer-descr">Лечебно-реабилитационный центр «Исцеление» — психиатрическая и наркологическая помощь в Ростове-на-Дону. Работаем круглосуточно, анонимно.</p>
               <button class="btn footer-btn">получить консультацию</button>
             </div>
@@ -223,6 +223,117 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu">
+      <form class="mobile-menu__search mm-search" action="/search/" method="get">
+        <label class="mm-search__label"><span class="visually-hidden">Поиск по сайту</span>
+          <input class="mm-search__input" type="search" name="q" placeholder="Услуга, направление, врач...">
+        </label>
+        <button class="mm-search__button" type="submit" aria-label="Найти">
+          <svg class="mm-search__icon" width="20" height="20" aria-hidden="true">
+            <use href="assets/icons/symbol/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+      <div class="mobile-menu__wrapper">
+        <div class="mobile-menu__wrapper-box">
+          <div class="mob-menu-wrapper">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item menu__item--has-submenu"><a class="menu__link" href="#">Зависимости</a><span class="menu-link-btn"></span>
+                  <ul class="menu__submenu">
+                    <li class="menu__item menu__item--has-submenu"><a class="menu__link" href="#">Лечение алкоголизма</a><span class="menu-link-btn"></span>
+                      <ul class="menu__submenu">
+                        <li class="menu__item"><a class="menu__link" href="#">Обрыв запоя</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Купирование алкогольного абстинентного синдрома</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Лечение алкогольных психозов</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu__item menu__item--has-submenu"><a class="menu__link" href="#">Помощь наркозависимым</a><span class="menu-link-btn"></span>
+                      <ul class="menu__submenu">
+                        <li class="menu__item"><a class="menu__link" href="#">Обрыв запоя</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Купирование алкогольного абстинентного синдрома</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Лечение алкогольных психозов</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="#">Лечение игровой зависимости (лудомании)</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Помощь созависимым и родственникам</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Зависимость у подростков</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Мотивация и интервенция</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item menu__item--has-submenu"><a class="menu__link" href="#">Психотерапия</a><span class="menu-link-btn"></span>
+                  <ul class="menu__submenu">
+                    <li class="menu__item"><a class="menu__link" href="#">Расстройства настроения</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Тревожные расстройства</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Психотические расстройства</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Неврозы</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Расстройства пищевого поведения</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Стресс и кризисные состояния</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Психосоматика</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Семейная и супружеская психотерапия</a></li>
+                    <li class="menu__item menu__item--has-submenu"><a class="menu__link" href="#">Расстройства личности</a><span class="menu-link-btn"></span>
+                      <ul class="menu__submenu">
+                        <li class="menu__item"><a class="menu__link" href="#">Эмоционально-лабильное расстройство личности (ПРЛ)</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Другие расстройства личности</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="#">Пациенты с «двойным диагнозом»</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Подросткам</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Пожилым пациентам</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Форматы лечения</a></li>
+                <li class="menu__item menu__item--has-submenu"><a class="menu__link" href="#">О клинике</a><span class="menu-link-btn"></span>
+                  <ul class="menu__submenu">
+                    <li class="menu__item menu__item--has-submenu"><a class="menu__link" href="#">О нас</a><span class="menu-link-btn"></span>
+                      <ul class="menu__submenu">
+                        <li class="menu__item"><a class="menu__link" href="#">Разрешающие документы</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Программа государственный гарантий</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Контролирующие органы</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Юридическая информация</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="#">Партнеры</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Вакансии</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Фотогалерея</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Оплата</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Вопрос-ответ</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Документация</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Цены</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <button class="header-bottom__feedback btn mobile-menu__btn">Заказать звонок</button>
+          <div class="mobile-menu__info mm-info"></div>
+          <div class="header-top__work">
+            <svg class="header-top__work-time" aria-label="График работы">
+              <use href="assets/icons/symbol/sprite.svg#time"></use>
+            </svg>Круглосуточно
+          </div>
+          <div class="mm-info__phones"><a class="mm-info__phone" href="tel:+78632327517">+7 (863) 232 75 17</a><a class="mm-info__phone" href="tel:+79885368511">+7 (988) 536 85 11</a></div>
+          <div class="mm-info__text">
+            <p><span>г. Ростов-на-Дону</span></p>
+            <p>ул. Варфоломеева, 243</p>
+            <p>ул. Варфоломеева, 243</p>
+          </div>
+          <div class="mm-info__social soc-btns"><a class="soc-btns__item soc-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+              <svg class="soc-btn__icon" aria-hidden="true"> 
+                <use href="assets/icons/symbol/sprite.svg#tg"></use>
+              </svg></a><a class="soc-btns__item soc-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="VK">
+              <svg class="soc-btn__icon" aria-hidden="true"> 
+                <use href="assets/icons/symbol/sprite.svg#vk"></use>
+              </svg></a><a class="soc-btns__item soc-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="Max">
+              <svg class="soc-btn__icon" aria-hidden="true"> 
+                <use href="assets/icons/symbol/sprite.svg#max"></use>
+              </svg></a></div>
+        </div>
+      </div>
+    </div>
     <div class="hidden">
       <form class="form" id="zayavka2">
         <h3 class="text-center">Оставить заявку</h3>

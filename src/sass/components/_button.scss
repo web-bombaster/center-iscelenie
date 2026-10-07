@@ -1,15 +1,15 @@
 .btn {
+	transition: all 0.25s;
+	cursor: pointer;
+	border: none;
+	border-radius: 100px;
+	background-color: #02ad4a;
 	padding: 17px 26px 15px 26px;
+	color: #fff;
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.1;
 	text-transform: uppercase;
-	color: #fff;
-	border-radius: 100px;
-	background-color: #02ad4a;
-	border: none;
-	cursor: pointer;
-	transition: all 0.25s;
 
 	@media screen and (max-width: 768px) {
 		font-size: 16px;

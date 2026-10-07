@@ -9,11 +9,15 @@
 @use "blocks/header";
 @use "blocks/hero";
 @use "blocks/advantages";
+@use "blocks/mobile-menu";
+@use "blocks/multi-level-menu";
 
 // Компоненты
 @use "components/button";
 @use "components/btn-arrow";
 @use "components/burger";
+@use "components/soc-btns";
+@use "components/work-time";
 
 // Библиотеки и их кастомизация
 // @use "../libs/magnific-popup/dist/magnific-popup.css";

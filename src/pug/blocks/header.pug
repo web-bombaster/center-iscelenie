@@ -3,7 +3,7 @@ header.header
 		.container-full.header-top__container
 			a.header-top__logo(href="/")
 				img.header-top__img(src="/assets/images/logo.png", alt="Исцеление - медико-психологический центр")
-			button.header-top__burger.burger(type='button' aria-label='Меню сайта')
+			button.header-top__burger.burger.jsMobileMenuBtnToggle(type='button' aria-label='Меню сайта')
 				span.burger-line
 				span.burger-title Меню
 
@@ -26,7 +26,6 @@ header.header
 					a.soc-btns__item.soc-btn(href="#" target="_blank" rel="noopener noreferrer" aria-label="Max")
 						svg.soc-btn__icon(aria-hidden="true") 
 							use(href="assets/icons/symbol/sprite.svg#max")
-						//- img.soc-btn__icon(src="", alt="")
 				.header-top__phones.ht-phones
 					a.ht-phones__item(href="tel:+78632327517") +7 (863) 232 75 17
 					a.ht-phones__item(href="tel:+79885368511") +7 (988) 536 85 11
