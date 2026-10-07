@@ -144,6 +144,15 @@ input::placeholder {
 	font-size: 48px;
 	line-height: normal;
 	text-wrap: balance;
+
+	@media screen and (max-width: 1400px) {
+		font-size: 36px;
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 30px;
+		line-height: 1.2;
+	}
 }
 
 .sections-column {

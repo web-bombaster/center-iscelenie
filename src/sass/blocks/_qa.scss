@@ -37,18 +37,16 @@
 
 .callback-form {
 	display: flex;
+	flex-shrink: 0;
 	flex-direction: column;
 	gap: 8px;
-	max-width: 362px;
 	width: 100%;
-	flex-shrink: 0;
+	max-width: 362px;
 
 	@media screen and (max-width: 992px) {
 		max-width: initial;
 	}
 }
-
-.callback-form__field {}
 
 .callback-form__input {
 	border: none;
@@ -83,10 +81,10 @@
 .callback-form__checkbox-input {}
 
 .callback-form__checkbox-text {
+	cursor: pointer;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5;
-	cursor: pointer;
 	
 	a {
 		color: rgba(34, 34, 34, 0.3);
@@ -106,35 +104,35 @@
 .checkbox__box {
 	position: relative;
 	flex: 0 0 20px;
-	width: 20px;
-	height: 20px;
+
+	transition:
+		background-color 0.2s,
+		border-color 0.2s;
 
 	border: 1px solid rgba(34, 34, 34, 0.3);
 	border-radius: 5px;
 
 	background: #fff;
-
-	transition:
-		background-color 0.2s,
-		border-color 0.2s;
+	width: 20px;
+	height: 20px;
 }
 
 /* Галочка */
 .checkbox__box::after {
-	content: "";
 
 	position: absolute;
 	top: 3px;
 	left: 7px;
 
-	width: 5px;
-	height: 9px;
+	transform: rotate(45deg) scale(0);
+	transition: transform 0.2s;
 
 	border-right: 2px solid #222;
 	border-bottom: 2px solid #222;
 
-	transform: rotate(45deg) scale(0);
-	transition: transform 0.2s;
+	width: 5px;
+	height: 9px;
+	content: "";
 }
 
 /* Состояние checked */

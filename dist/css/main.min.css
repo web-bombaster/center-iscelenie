@@ -435,6 +435,17 @@ input::placeholder {
   line-height: normal;
   text-wrap: balance;
 }
+@media screen and (max-width: 1400px) {
+  .h2 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .h2 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+}
 
 .sections-column {
   display: flex;
@@ -1517,11 +1528,11 @@ input::placeholder {
 
 .callback-form {
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
   gap: 8px;
-  max-width: 362px;
   width: 100%;
-  flex-shrink: 0;
+  max-width: 362px;
 }
 @media screen and (max-width: 992px) {
   .callback-form {
@@ -1563,10 +1574,10 @@ input::placeholder {
 }
 
 .callback-form__checkbox-text {
+  cursor: pointer;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  cursor: pointer;
 }
 .callback-form__checkbox-text a {
   color: rgba(34, 34, 34, 0.3);
@@ -1584,26 +1595,26 @@ input::placeholder {
 .checkbox__box {
   position: relative;
   flex: 0 0 20px;
-  width: 20px;
-  height: 20px;
+  transition: background-color 0.2s, border-color 0.2s;
   border: 1px solid rgba(34, 34, 34, 0.3);
   border-radius: 5px;
   background: #fff;
-  transition: background-color 0.2s, border-color 0.2s;
+  width: 20px;
+  height: 20px;
 }
 
 /* Галочка */
 .checkbox__box::after {
-  content: "";
   position: absolute;
   top: 3px;
   left: 7px;
-  width: 5px;
-  height: 9px;
-  border-right: 2px solid #222;
-  border-bottom: 2px solid #222;
   transform: rotate(45deg) scale(0);
   transition: transform 0.2s;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  width: 5px;
+  height: 9px;
+  content: "";
 }
 
 /* Состояние checked */
@@ -1619,6 +1630,117 @@ input::placeholder {
 .callback-form__checkbox-input:focus-visible + .checkbox__box {
   outline: 2px solid #222;
   outline-offset: 2px;
+}
+
+.work-areas__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media screen and (max-width: 992px) {
+  .work-areas__grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .work-areas__grid {
+    gap: 10px;
+  }
+}
+
+.work-areas__top {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.work-areas__descr {
+  opacity: 0.8;
+  margin: 0;
+  text-wrap: balance;
+}
+@media screen and (max-width: 992px) {
+  .work-areas__descr {
+    margin-bottom: 30px;
+  }
+}
+
+.wa-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  background-color: #f3f7f7;
+  padding: 32px;
+  color: #222;
+}
+@media screen and (max-width: 768px) {
+  .wa-item {
+    padding: 20px;
+  }
+}
+
+.wa-item__title {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin: 0 0 52px;
+  padding-right: 84px;
+  min-height: 54px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+@media screen and (max-width: 768px) {
+  .wa-item__title {
+    margin: 0 0 40px;
+    padding-right: 64px;
+    min-height: 44px;
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+.wa-item__title::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) rotate(0);
+  border-radius: 50%;
+  background-color: #c0ebd2;
+  width: 54px;
+  height: 54px;
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32'%3E%3Cpath stroke='%23222' stroke-linecap='square' stroke-linejoin='round' stroke-width='1.5' d='M9.334 22.667 22.667 9.333m0 10.667V9.333H12'/%3E%3C/svg%3E%0A");
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.25s;
+}
+.wa-item:hover .wa-item__title::after {
+  background-color: #b5dcc6;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.wa-item__descr {
+  margin: auto 0 14px;
+  text-wrap: balance;
+}
+@media screen and (max-width: 768px) {
+  .wa-item__descr {
+    margin: 0 0 20px;
+  }
+}
+
+.wa-item__price {
+  display: block;
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+  .wa-item__price {
+    font-size: 20px;
+  }
 }
 
 .btn {
