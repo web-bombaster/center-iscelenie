@@ -97,7 +97,7 @@
 	padding-left: 16px;
 	color: #222;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 19px;
 
 	&:first-child {
 		border: none;
@@ -186,6 +186,7 @@
 	font-size: 18px;
 	line-height: normal;
 	text-transform: uppercase;
+	letter-spacing: -0.05em;
 
 	.header-nav > .header-nav__item & {
 		display: inline-flex;
@@ -215,12 +216,12 @@
 	}
 
 	.header-nav > .header-nav__item:has(.header-nav__submenu) > & {
-		margin-right: 22px;
+		margin-right: 28px;
 
 		&::after {
 			position: absolute;
 			top: 50%;
-			left: 100%;
+			left: calc(100% + 4px);
 			transform: translateY(-50%);
 			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3E%3Cpath stroke='%23222' stroke-linejoin='round' stroke-width='1.5' d='m19 9-7 7-7-7'/%3E%3C/svg%3E%0A");
 			background-size: cover;

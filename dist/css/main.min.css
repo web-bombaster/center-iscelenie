@@ -307,6 +307,7 @@ body {
   word-wrap: break-word;
   background-color: #fff;
   overflow-x: hidden;
+  letter-spacing: -0.029em;
 }
 @media screen and (max-width: 768px) {
   body {
@@ -414,6 +415,7 @@ input::placeholder {
   font-size: 56px;
   line-height: 1.1;
   text-wrap: balance;
+  letter-spacing: -0.033em;
 }
 @media screen and (max-width: 1400px) {
   .h1 {
@@ -434,6 +436,7 @@ input::placeholder {
   font-size: 48px;
   line-height: normal;
   text-wrap: balance;
+  letter-spacing: -0.029em;
 }
 @media screen and (max-width: 1400px) {
   .h2 {
@@ -896,7 +899,7 @@ input::placeholder {
   padding-left: 16px;
   color: #222;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 19px;
 }
 .ht-phones__item:first-child {
   border: none;
@@ -980,6 +983,7 @@ input::placeholder {
   font-size: 18px;
   line-height: normal;
   text-transform: uppercase;
+  letter-spacing: -0.05em;
 }
 .header-nav > .header-nav__item .header-nav__link {
   display: inline-flex;
@@ -1005,12 +1009,12 @@ input::placeholder {
   position: relative;
 }
 .header-nav > .header-nav__item:has(.header-nav__submenu) > .header-nav__link {
-  margin-right: 22px;
+  margin-right: 28px;
 }
 .header-nav > .header-nav__item:has(.header-nav__submenu) > .header-nav__link::after {
   position: absolute;
   top: 50%;
-  left: 100%;
+  left: calc(100% + 4px);
   transform: translateY(-50%);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3E%3Cpath stroke='%23222' stroke-linejoin='round' stroke-width='1.5' d='m19 9-7 7-7-7'/%3E%3C/svg%3E%0A");
   background-size: cover;
@@ -1658,6 +1662,7 @@ input::placeholder {
   opacity: 0.8;
   margin: 0;
   text-wrap: balance;
+  font-size: 16px;
 }
 @media screen and (max-width: 992px) {
   .work-areas__descr {
