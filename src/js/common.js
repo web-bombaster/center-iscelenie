@@ -10,5 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	// include './../js/myscripts/staff.js'
 	// include './../js/myscripts/steps.js'
 	// include './../js/myscripts/guarantees.js'
+	// include './../js/myscripts/page-content-more.js'
 
 });
