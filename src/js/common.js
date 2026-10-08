@@ -9,5 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	// include './../js/myscripts/multi-level-menu.js'
 	// include './../js/myscripts/staff.js'
 	// include './../js/myscripts/steps.js'
+	// include './../js/myscripts/guarantees.js'
 
 });

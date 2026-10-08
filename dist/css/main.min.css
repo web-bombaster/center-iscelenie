@@ -1963,6 +1963,54 @@ input::placeholder {
   text-wrap: balance;
 }
 
+.guarantees-box {
+  display: flex;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .guarantees-box {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.guarantees-info {
+  width: calc(50% - 10px);
+}
+@media screen and (max-width: 768px) {
+  .guarantees-info {
+    width: 100%;
+  }
+}
+
+.guarantees-info__title {
+  margin-bottom: 10px;
+}
+
+.guarantees-info__descr {
+  margin: 0 0 40px;
+  opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+  .guarantees-info__descr {
+    margin-bottom: 20px;
+  }
+}
+
+.guarantees-slider-box {
+  width: calc(50% - 10px);
+}
+@media screen and (max-width: 768px) {
+  .guarantees-slider-box {
+    width: 100%;
+  }
+}
+
+.guarantees-slider {
+  max-width: 100%;
+  overflow: visible;
+}
+
 .btn {
   transition: all 0.25s;
   cursor: pointer;
