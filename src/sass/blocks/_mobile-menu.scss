@@ -25,6 +25,16 @@
 		left: 0;
 		overflow-y: auto;
 	}
+
+	a {
+		transition: all 0.25s;
+
+		@media (hover: hover) {
+			&:hover {
+				transform: translateY(-2px);
+			}
+		}
+	}
 }
 
 .mobile-menu__wrapper {

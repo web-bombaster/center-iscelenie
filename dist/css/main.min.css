@@ -490,6 +490,14 @@ input::placeholder {
     padding-bottom: 40px;
   }
 }
+.footer a {
+  transition: all 0.25s;
+}
+@media (hover: hover) {
+  .footer a:hover {
+    transform: translateY(-2px);
+  }
+}
 
 .footer-grid {
   display: grid;
@@ -760,6 +768,7 @@ input::placeholder {
 }
 .footer-text__block a {
   color: #fff;
+  display: inline-flex;
 }
 
 .footer-map {
@@ -829,6 +838,14 @@ input::placeholder {
     top: 0;
     width: 100%;
     z-index: 100;
+  }
+}
+.header a {
+  transition: all 0.25s;
+}
+@media (hover: hover) {
+  .header a:hover {
+    transform: translateY(-2px);
   }
 }
 
@@ -913,6 +930,7 @@ input::placeholder {
   color: #222;
   font-weight: 500;
   font-size: 19px;
+  display: inline-flex;
 }
 .ht-phones__item:first-child {
   border: none;
@@ -1275,6 +1293,14 @@ input::placeholder {
 .mobile-menu.toggle {
   left: 0;
   overflow-y: auto;
+}
+.mobile-menu a {
+  transition: all 0.25s;
+}
+@media (hover: hover) {
+  .mobile-menu a:hover {
+    transform: translateY(-2px);
+  }
 }
 
 .mobile-menu__wrapper {
@@ -2081,6 +2107,11 @@ input::placeholder {
 .show-more-button:hover {
   color: #03923e;
 }
+@media (hover: hover) {
+  .show-more-button:hover {
+    transform: translateY(-2px);
+  }
+}
 @media screen and (max-width: 768px) {
   .show-more-button {
     margin-top: 22px;
@@ -2588,6 +2619,11 @@ input::placeholder {
 .btn:hover {
   background-color: #059c44;
 }
+@media (hover: hover) {
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+}
 
 .btn-arrow {
   display: block;
@@ -2616,6 +2652,11 @@ input::placeholder {
 }
 .btn-arrow:hover::after {
   background-color: #03923e;
+}
+@media (hover: hover) {
+  .btn-arrow:hover {
+    transform: translateY(-2px);
+  }
 }
 .btn-arrow::after {
   content: "";
@@ -2807,6 +2848,12 @@ input::placeholder {
   width: 32px;
   height: 32px;
 }
+@media (hover: hover) {
+  .slider-nav__prev:hover,
+  .slider-nav__next:hover {
+    transform: translateY(-2px);
+  }
+}
 .slider-nav__prev.swiper-button-disabled,
 .slider-nav__next.swiper-button-disabled {
   opacity: 0.4;
@@ -2815,5 +2862,10 @@ input::placeholder {
 
 .slider-nav__next {
   transform: rotate(180deg);
+}
+@media (hover: hover) {
+  .slider-nav__next:hover {
+    transform: translateY(-2px) rotate(180deg);
+  }
 }
 /*# sourceMappingURL=main.min.css.map */

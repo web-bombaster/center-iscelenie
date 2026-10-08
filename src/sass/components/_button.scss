@@ -18,4 +18,10 @@
 	&:hover {
 		background-color: #059c44;
 	}
+
+	@media (hover: hover) {
+		&:hover {
+			transform: translateY(-2px);
+		}
+	}
 }

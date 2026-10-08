@@ -8,6 +8,16 @@
 		width: 100%;
 		z-index: 100;
 	}
+
+	a {
+		transition: all 0.25s;
+
+		@media (hover: hover) {
+			&:hover {
+				transform: translateY(-2px);
+			}
+		}
+	}
 }
 
 .container-full {}
@@ -98,6 +108,7 @@
 	color: #222;
 	font-weight: 500;
 	font-size: 19px;
+	display: inline-flex;
 
 	&:first-child {
 		border: none;
