@@ -48,3 +48,149 @@
 	}
 }
 
+.information-slider {
+	width: 100%;
+}
+
+.information-slider__wrapper {
+	display: grid;
+	grid-template-areas: 
+		"a b"
+		"a c"
+	;
+	grid-template-columns: 575px 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	gap: 20px;
+	min-height: 342px;
+
+	@media screen and (max-width: 1400px) {
+		display: flex;
+	}
+}
+
+.information-slider__item {}
+
+.inf-item {
+	background-color: #f3f7f7;
+	border-radius: 30px;
+	overflow: hidden;
+	width: 100% !important;
+
+	@media screen and (max-width: 1400px) {
+		width: initial !important;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&:hover {
+		.inf-item__title {
+			color: #02ad4a;
+		}
+
+		.inf-item__img {
+			transform: scale(1.05);
+		}
+	}
+
+	&:nth-child(1) {
+		grid-area: a;
+	}	
+
+	&:nth-child(2) {
+		grid-area: b;
+	}
+
+	&:nth-child(3) {
+		grid-area: c;
+	}
+
+	&:nth-child(2), &:nth-child(3) {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+
+		@media screen and (max-width: 1400px) {
+			display: block;
+		}
+
+		.inf-item__img-box {
+			width: 337px;
+			height: 100%;
+			flex-shrink: 0;
+
+			@media screen and (max-width: 1400px) {
+				width: initial;
+				height: initial;
+				flex-shrink: initial;
+			}
+		}
+
+		.inf-item__img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+
+			@media screen and (max-width: 1400px) {
+				width: initial;
+				height: initial;
+				object-fit: initial;
+				object-position: initial;
+			}
+		}
+
+		.inf-item__box {
+			align-self: flex-end;
+
+			@media screen and (max-width: 1400px) {
+				align-self: initial;
+			}
+		}
+	}
+}
+
+.inf-item__img-box {
+	overflow: hidden;
+}
+
+.inf-item__img {
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: all .25s;
+}
+
+.inf-item__box {
+	padding: 32px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	@media screen and (max-width: 768px) {
+		padding: 20px;
+	}
+}
+
+.inf-item__date {
+	font-size: 16px;
+	opacity: 0.5;
+	color: #222;
+
+	@media screen and (max-width: 768px) {
+		font-size: 14px;
+	}
+}
+
+.inf-item__title {
+	margin: 0;
+	font-size: 20px;
+	line-height: 1.3;
+	text-transform: uppercase;
+	color: #222;
+	text-wrap: balance;
+	transition: all .25s;
+
+	@media screen and (max-width: 768px) {
+		font-size: 16px;
+	}
+}
