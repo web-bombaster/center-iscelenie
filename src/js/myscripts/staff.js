@@ -6,8 +6,9 @@ function staffSliderInit() {
 	}
 
 	new Swiper(staffSlider, {
-		slidesPerView: 1.15,
+		slidesPerView: 1.1,
 		spaceBetween: 10,
+		
 		navigation: {
 			prevEl: '.staff-slider__prev',
 			nextEl: '.staff-slider__next',

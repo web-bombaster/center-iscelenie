@@ -14,6 +14,7 @@
 @use "blocks/qa";
 @use "blocks/work-areas";
 @use "blocks/staff";
+@use "blocks/steps";
 
 // Компоненты
 @use "components/button";
@@ -21,6 +22,7 @@
 @use "components/burger";
 @use "components/soc-btns";
 @use "components/work-time";
+@use "components/slider-nav";
 
 // Библиотеки и их кастомизация
 // @use "../libs/magnific-popup/dist/magnific-popup.css";
