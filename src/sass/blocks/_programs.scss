@@ -1,0 +1,154 @@
+.programs {}
+
+.programs-container {}
+
+.programs-box {}
+
+.programs-top {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-areas: 
+		"a b"
+		"c d"
+	;
+	gap: 10px;
+
+	@media screen and (max-width: 992px) {
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			"a"
+			"c"
+			"b"
+		;
+	}
+}
+
+.programs-top__title {
+	grid-area: a;
+}
+
+.programs-top__descr {
+	margin: 0;
+	grid-area: c;
+	opacity: 0.8;
+}
+
+.programs-top__btn {
+	grid-area: b;
+	align-self: center;
+
+	@media screen and (max-width: 992px) {
+		justify-self: start;
+		margin-top: 10px;
+	}
+}
+
+.programs-grid {}
+
+.programs-row {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	display: grid;
+	grid-template-columns: 1fr 218px 218px 99px 218px ;
+	border-bottom: 1px solid rgba(34, 34, 34, 0.15);
+
+	@media screen and (max-width: 1400px) {
+		grid-template-columns: 1fr 240px 240px;
+	}
+
+	@media screen and (max-width: 992px) {
+		grid-template-columns: 1fr 180px 180px;
+	}
+
+	@media screen and (max-width: 768px) {
+		grid-template-columns: auto 1fr;
+		grid-template-areas: 
+			"a a"
+			"b c"
+		;
+		gap: 20px;
+	}
+}
+
+.programs-row__title {
+	position: relative;
+	padding-left: 55px;
+	margin: 0;
+	grid-column: 1 / 2;
+	font-size: 24px;
+	line-height: normal;
+
+	@media screen and (max-width: 1400px) {
+		grid-column: initial;
+	}
+
+	@media screen and (max-width: 992px) {
+		font-size: 20px;
+		line-height: 1.5;
+	}
+
+	@media screen and (max-width: 768px) {
+		grid-area: a;
+		padding-left: 0;
+		padding-top: 35px;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 9px;
+		width: 15px;
+		height: 15px;
+		background-color: #c0ebd2;
+
+		@media screen and (max-width: 768px) {
+			top: 0;
+		}
+	}
+}
+
+.programs-row__time {
+	grid-column: 3 / 4;
+	font-size: 24px;
+	line-height: normal;
+	align-self: center;
+
+	@media screen and (max-width: 1400px) {
+		grid-column: initial;
+		padding-left: 32px;
+	}
+
+	@media screen and (max-width: 992px) {
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+	@media screen and (max-width: 768px) {
+		grid-area: c;
+		padding-left: 0;
+	}
+}
+
+.programs-row__price {
+	grid-column: 5 / 6;
+	font-size: 24px;
+	line-height: normal;
+	color: #02ad4a;
+	align-self: center;
+
+	@media screen and (max-width: 1400px) {
+		grid-column: initial;
+		padding-left: 32px;
+	}
+
+	@media screen and (max-width: 992px) {
+		font-weight: 500;
+		font-size: 20px;
+	}
+
+	@media screen and (max-width: 768px) {
+		grid-area: b;
+		padding-left: 0;
+	}
+}

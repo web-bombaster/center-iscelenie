@@ -46,3 +46,4 @@ function showMoreInit(selector, visibleItems = 3, showText = 'Показать �
 }
 
 showMoreInit('.page-content__box', 3, 'Читать полностью', 'Сверуть');
+showMoreInit('.programs-grid', 5, 'Показать больше', 'Сверуть');
