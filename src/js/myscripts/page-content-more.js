@@ -1,4 +1,9 @@
-function showMoreInit(selector, visibleItems = 3, showText = 'Показать все', hideText = 'Свернуть') {
+function showMoreInit(
+	selector,
+	visibleItems = 3,
+	showText = 'Показать все',
+	hideText = 'Свернуть'
+) {
 	const block = document.querySelector(selector);
 
 	// Если блока нет на странице — ничего не делаем
@@ -8,16 +13,16 @@ function showMoreInit(selector, visibleItems = 3, showText = 'Показать �
 
 	const items = Array.from(block.children);
 
-	// Если элементов не больше, чем нужно показать,
+	// Если все элементы уже помещаются в видимую часть,
 	// кнопку создавать не нужно
 	if (items.length <= visibleItems) {
 		return;
 	}
 
-	// Скрываем элементы после visibleItems
+	// Скрываем лишние элементы
 	items.forEach((item, index) => {
 		if (index >= visibleItems) {
-			item.hidden = true;
+			item.classList.add('visually-hidden');
 		}
 	});
 
@@ -28,16 +33,16 @@ function showMoreInit(selector, visibleItems = 3, showText = 'Показать �
 	button.classList.add('show-more-button');
 	button.textContent = showText;
 
-	// Вставляем кнопку сразу после блока
+	// Добавляем кнопку после блока
 	block.insertAdjacentElement('afterend', button);
 
-	// Обработчик кнопки
+	// Обработка клика
 	button.addEventListener('click', () => {
 		const isExpanded = button.classList.toggle('is-active');
 
 		items.forEach((item, index) => {
 			if (index >= visibleItems) {
-				item.hidden = !isExpanded;
+				item.classList.toggle('visually-hidden', !isExpanded);
 			}
 		});
 

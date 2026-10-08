@@ -2108,6 +2108,7 @@ input::placeholder {
   margin: 0;
   grid-area: c;
   opacity: 0.8;
+  text-wrap: balance;
 }
 
 .programs-top__btn {
@@ -2236,6 +2237,53 @@ input::placeholder {
     grid-area: b;
     padding-left: 0;
   }
+}
+
+.reviews-box {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.reviews-top {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "a b" "c d";
+  gap: 10px;
+}
+@media screen and (max-width: 992px) {
+  .reviews-top {
+    grid-template-columns: 1fr;
+    grid-template-areas: "a" "c" "b";
+  }
+}
+
+.reviews-top__title {
+  grid-area: a;
+}
+
+.reviews-top__descr {
+  margin: 0;
+  grid-area: c;
+  opacity: 0.8;
+  text-wrap: balance;
+}
+
+.reviews-top__btn {
+  grid-area: b;
+  align-self: center;
+}
+@media screen and (max-width: 992px) {
+  .reviews-top__btn {
+    justify-self: start;
+    margin-top: 10px;
+  }
+}
+
+.reviews-content {
+  background-color: #e5f4eb;
+  border-radius: 30px;
+  height: 300px;
 }
 
 .btn {
