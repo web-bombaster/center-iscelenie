@@ -7,5 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	// include './../js/myscripts/mobile-menu.js'
 	// include './../js/myscripts/header-fixed.js'
 	// include './../js/myscripts/multi-level-menu.js'
+	// include './../js/myscripts/staff.js'
 
 });
