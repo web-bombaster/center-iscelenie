@@ -2,18 +2,13 @@
 
 .information-container {}
 
-.information-box {
-	display: flex;
-	flex-direction: column;
-	gap: 40px;
-}
-
-.information-top {
+.information-grid {
 	display: grid;
 	grid-template-columns: 1fr auto;
 	grid-template-areas: 
 		"a b"
 		"c d"
+		"e e"
 	;
 	gap: 10px;
 
@@ -22,6 +17,7 @@
 		grid-template-areas: 
 			"a"
 			"c"
+			"e"
 			"b"
 		;
 	}
@@ -45,26 +41,33 @@
 	@media screen and (max-width: 992px) {
 		justify-self: start;
 		margin-top: 10px;
+		justify-self: center;
+	}
+
+	@media screen and (max-width: 460px) {
+		justify-self: stretch;
 	}
 }
 
 .information-slider {
+	margin-top: 30px;
 	width: 100%;
+	grid-area: e;
 }
 
 .information-slider__wrapper {
-	display: grid;
-	grid-template-areas: 
-		"a b"
-		"a c"
-	;
-	grid-template-columns: 575px 1fr;
-	grid-template-rows: repeat(2, 1fr);
-	gap: 20px;
-	min-height: 342px;
-
-	@media screen and (max-width: 1400px) {
-		display: flex;
+	display: flex;
+	
+	@media screen and (min-width: 1400px) {
+		display: grid;
+		grid-template-areas: 
+			"a b"
+			"a c"
+		;
+		grid-template-columns: 575px 1fr;
+		grid-template-rows: repeat(2, 1fr);
+		gap: 20px;
+		min-height: 342px;
 	}
 }
 
@@ -74,12 +77,10 @@
 	background-color: #f3f7f7;
 	border-radius: 30px;
 	overflow: hidden;
-	width: 100% !important;
-
-	@media screen and (max-width: 1400px) {
-		width: initial !important;
-		display: flex;
-		flex-direction: column;
+	height: initial;
+	
+	@media screen and (min-width: 1400px) {
+		width: 100% !important;
 	}
 
 	&:hover {
@@ -105,45 +106,36 @@
 	}
 
 	&:nth-child(2), &:nth-child(3) {
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: space-between;
-
-		@media screen and (max-width: 1400px) {
-			display: block;
+		display: block;
+		
+		@media screen and (min-width: 1400px) {
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-between;
 		}
 
 		.inf-item__img-box {
-			width: 337px;
-			height: 100%;
-			flex-shrink: 0;
-
-			@media screen and (max-width: 1400px) {
-				width: initial;
-				height: initial;
-				flex-shrink: initial;
+			@media screen and (min-width: 1400px) {
+				width: 337px;
+				height: 100%;
+				flex-shrink: 0;
 			}
 		}
 
 		.inf-item__img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			object-position: center;
-
-			@media screen and (max-width: 1400px) {
-				width: initial;
-				height: initial;
-				object-fit: initial;
-				object-position: initial;
+			@media screen and (min-width: 1400px) {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
 			}
 		}
 
 		.inf-item__box {
-			align-self: flex-end;
-
-			@media screen and (max-width: 1400px) {
-				align-self: initial;
+			align-self: initial;
+			
+			@media screen and (min-width: 1400px) {
+				align-self: flex-end;
 			}
 		}
 	}
