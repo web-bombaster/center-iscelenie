@@ -1,0 +1,50 @@
+.information {}
+
+.information-container {}
+
+.information-box {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.information-top {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-areas: 
+		"a b"
+		"c d"
+	;
+	gap: 10px;
+
+	@media screen and (max-width: 992px) {
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			"a"
+			"c"
+			"b"
+		;
+	}
+}
+
+.information-top__title {
+	grid-area: a;
+}
+
+.information-top__descr {
+	margin: 0;
+	grid-area: c;
+	opacity: 0.8;
+	text-wrap: balance;
+}
+
+.information-top__btn {
+	grid-area: b;
+	align-self: center;
+
+	@media screen and (max-width: 992px) {
+		justify-self: start;
+		margin-top: 10px;
+	}
+}
+

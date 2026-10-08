@@ -4,7 +4,7 @@
 // targetElement - класс изменяемого элемента,
 // tagetClass - с каким классом выполняется действие, toggle по-умолчанию
 // targetAction - какое действие выполняем (toggle, remove, add), toggle по-умолчанию   
-const classToggle = (actionElement, targetElement, targetClass = "active", targetAction = "toggle") => {
+const classToggle = (actionElement, targetElement, targetClass = "toggle", targetAction = "toggle") => {
 	const actionElements = document.querySelectorAll(actionElement);
 	const targetElements = document.querySelectorAll(targetElement);
 
@@ -35,7 +35,7 @@ const classToggle = (actionElement, targetElement, targetClass = "active", targe
 };
 
 // Вызов функции
-// classToggle(".category-filters__toggle", ".category-filters");
+classToggle(".faq-item__title", ".faq-item");
 
 
 
