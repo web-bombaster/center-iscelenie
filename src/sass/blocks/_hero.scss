@@ -9,6 +9,13 @@
 	background-position: center;
 	background-image: url('../assets/images/hero.jpg');
 
+	@media screen and (max-width: 1600px) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		height: initial;
+		background-position: center top;
+	}
+
 	@media screen and (max-width: 768px) {
 		padding-top: 40px;
 		padding-bottom: 40px;
@@ -32,6 +39,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 4px;
+
+	@media screen and (max-width: 1600px) {
+		margin-bottom: 24px;
+	}
 
 	@media screen and (max-width: 768px) {
 		margin-bottom: 20px;
@@ -62,6 +73,10 @@
 
 .hero-descr {
 	margin-bottom: 64px;
+
+	@media screen and (max-width: 1600px) {
+		margin-bottom: 34px;
+	}
 
 	@media screen and (max-width: 768px) {
 		margin-bottom: 40px;

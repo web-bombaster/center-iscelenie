@@ -552,7 +552,11 @@ input::placeholder {
 
 .header-top__img {
   display: block;
-  height: 64px;
+  height: 56px;
+}
+
+.header-top__adress {
+  font-size: 16px;
 }
 
 .header-top__adress span {
@@ -562,7 +566,10 @@ input::placeholder {
 }
 
 .header-top__adress span:first-child {
-  padding-left: 0;
+  border-radius: 6px;
+  padding: 6px 12px;
+  background-color: #fff;
+  border-right: initial;
 }
 
 .header-top__adress span:last-child {
@@ -570,10 +577,18 @@ input::placeholder {
   padding-right: 0;
 }
 
+.header-top__adress i {
+  margin-left: 8px;
+  font-size: 14px;
+  line-height: 1.3;
+  opacity: .6;
+  font-style: normal;
+}
+
 .header-top__info {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 24px;
 }
 
 .ht-phones__item {
@@ -763,9 +778,9 @@ input::placeholder {
   gap: 10px;
   margin-left: -20px;
   border-right: 1px solid rgba(34,34,34,.1);
-  width: 500px;
   width: -moz-max-content;
   width: max-content;
+  min-width: 480px;
 }
 
 .header-nav__submenu--2lvl {
@@ -1336,6 +1351,10 @@ input::placeholder {
   font-size: 24px;
 }
 
+.staff {
+  overflow: hidden;
+}
+
 .staff-box {
   display: flex;
   flex-direction: column;
@@ -1406,6 +1425,10 @@ input::placeholder {
   line-height: 1.5;
 }
 
+.staff-item__experience:empty {
+  display: none;
+}
+
 .staff-item__name {
   margin-bottom: 10px;
   color: #222;
@@ -1424,10 +1447,36 @@ input::placeholder {
   text-wrap: balance;
 }
 
+.staff-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.staff-link {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.1;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #02ad4a;
+  transition: .25s;
+}
+
+.staff-link:hover {
+  color: #03923e;
+}
+
+.staff-link .slider-nav {
+  margin-top: 0;
+}
+
 .steps {
   background: linear-gradient(94.88deg,#f3fef7 2.91%,#c0ebd2 80.58%,#e9f3d3 100%);
   padding-top: 80px;
   padding-bottom: 80px;
+  overflow: hidden;
 }
 
 .steps-box {
@@ -1497,6 +1546,10 @@ input::placeholder {
 .steps-item__descr {
   margin-top: auto;
   text-wrap: balance;
+}
+
+.guarantees {
+  overflow: hidden;
 }
 
 .guarantees-box {
@@ -2013,6 +2066,7 @@ input::placeholder {
   display: flex;
   align-items: center;
   gap: 8px;
+  font-size: 16px;
   color: #02ad4a;
   font-weight: 700;
   text-transform: uppercase;
@@ -2136,6 +2190,23 @@ input::placeholder {
 
   .burger {
     display: block;
+  }
+}
+
+@media screen and (max-width:1600px) {
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: initial;
+    background-position: center top;
+  }
+
+  .hero-tags {
+    margin-bottom: 24px;
+  }
+
+  .hero-descr {
+    margin-bottom: 34px;
   }
 }
 
@@ -2552,6 +2623,10 @@ input::placeholder {
   .staff-item__descr {
     font-size: 14px;
     line-height: 1.3;
+  }
+
+  .staff-link {
+    font-size: 16px;
   }
 
   .steps {

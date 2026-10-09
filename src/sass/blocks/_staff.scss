@@ -1,4 +1,6 @@
-.staff {}
+.staff {
+	overflow: hidden;
+}
 
 .staff-container {}
 
@@ -86,6 +88,10 @@
 		font-size: 14px;
 		line-height: 1.3;
 	}
+
+	&:empty {
+		display: none;
+	}
 }
 
 .staff-item__name {
@@ -113,5 +119,32 @@
 	@media screen and (max-width: 768px) {
 		font-size: 14px;
 		line-height: 1.3;
+	}
+}
+.staff-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.staff-link {
+	margin-top: 20px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.1;
+	text-decoration: underline;
+	text-transform: uppercase;
+	color: #02ad4a;
+	transition: all .25s;
+
+	&:hover {
+		color: #03923e;
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 16px;
+	}
+
+	.slider-nav {
+		margin-top: 0;
 	}
 }

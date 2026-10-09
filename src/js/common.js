@@ -12,5 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	// include './../js/myscripts/guarantees.js'
 	// include './../js/myscripts/page-content-more.js'
 	// include './../js/myscripts/information.js'
+	// include './../js/myscripts/inputmask.js'
 
 });
