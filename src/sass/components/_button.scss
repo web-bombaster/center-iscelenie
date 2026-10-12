@@ -7,13 +7,9 @@
 	padding: 17px 26px 15px 26px;
 	color: #fff;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 1.1;
 	text-transform: uppercase;
-
-	@media screen and (max-width: 768px) {
-		font-size: 16px;
-	}
 
 	&:hover {
 		background-color: #059c44;

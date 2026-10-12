@@ -136,8 +136,8 @@
 .header-bottom {
 	position: relative;
 	background-color: #fff;
-	padding-top: 4px;
-	padding-bottom: 4px;
+	padding-top: 6px;
+	padding-bottom: 6px;
 	
 	@media screen and (max-width: 1820px) {
 		display: none;
@@ -206,7 +206,7 @@
 	transition: all .25s;
 	color: #222;
 	font-weight: 500;
-	font-size: 16px;
+	font-size: 15px;
 	line-height: normal;
 	text-transform: uppercase;
 	letter-spacing: -0.05em;
@@ -214,7 +214,7 @@
 	.header-nav > .header-nav__item & {
 		display: inline-flex;
 		align-items: center;
-		height: 54px;
+		height: 36px;
 	}
 	
 	.header-nav__submenu--1lvl & {
@@ -225,7 +225,7 @@
 		padding: 8px 20px 10px;
 		color: #222;
 		font-weight: 400;
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 1.5;
 		text-transform: none;
 	

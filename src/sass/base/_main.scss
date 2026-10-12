@@ -16,7 +16,7 @@ body {
 	min-height: 100vh;
 	color: #222;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.5;
 	font-family: Manrope, system-ui;
 	/*Перенос длинных слов*/
@@ -25,10 +25,6 @@ body {
 	background-color: #fff;
 	overflow-x: hidden;
 	letter-spacing: -0.029em;
-
-	@media screen and (max-width: 768px) {
-		font-size: 16px;
-	}
 
 	&.toggle {
 		height: 100vh;
