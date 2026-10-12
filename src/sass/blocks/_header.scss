@@ -136,8 +136,8 @@
 .header-bottom {
 	position: relative;
 	background-color: #fff;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 4px;
+	padding-bottom: 4px;
 	
 	@media screen and (max-width: 1820px) {
 		display: none;
@@ -206,7 +206,7 @@
 	transition: all .25s;
 	color: #222;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: normal;
 	text-transform: uppercase;
 	letter-spacing: -0.05em;
@@ -225,7 +225,7 @@
 		padding: 8px 20px 10px;
 		color: #222;
 		font-weight: 400;
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 1.5;
 		text-transform: none;
 	

@@ -129,8 +129,8 @@ input::placeholder {
 	text-wrap: balance;
 	letter-spacing: -0.033em;
 
-	@media screen and (max-width: 1400px) {
-		font-size: 42px;
+	@media screen and (max-width: 1800px) {
+		font-size: 36px;
 	}
 
 	@media screen and (max-width: 768px) {
@@ -148,8 +148,8 @@ input::placeholder {
 	text-wrap: balance;
 	letter-spacing: -0.029em;
 
-	@media screen and (max-width: 1400px) {
-		font-size: 36px;
+	@media screen and (max-width: 1800px) {
+		font-size: 32px;
 		line-height: 1.2;
 	}
 

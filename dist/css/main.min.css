@@ -613,8 +613,8 @@ input::placeholder {
 .header-bottom {
   position: relative;
   background-color: #fff;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .header-bottom__container {
@@ -679,7 +679,7 @@ input::placeholder {
   transition: .25s;
   color: #222;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: normal;
   text-transform: uppercase;
   letter-spacing: -.05em;
@@ -699,7 +699,7 @@ input::placeholder {
   padding: 8px 20px 10px;
   color: #222;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   text-transform: none;
 }
@@ -884,7 +884,7 @@ input::placeholder {
   display: block;
   margin-top: auto;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.3;
   text-transform: uppercase;
   color: #222;
@@ -948,7 +948,7 @@ input::placeholder {
   position: relative;
   flex-grow: 1;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 }
 
 .mm-search {
@@ -2198,6 +2198,15 @@ input::placeholder {
 }
 
 @media screen and (max-width:1800px) {
+  .h1 {
+    font-size: 36px;
+  }
+
+  .h2 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
   .hero {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -2212,18 +2221,17 @@ input::placeholder {
   .hero-descr {
     margin-bottom: 34px;
   }
+
+  .wa-item__title {
+    font-size: 22px;
+  }
+
+  .wa-item__price {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width:1400px) {
-  .h1 {
-    font-size: 42px;
-  }
-
-  .h2 {
-    font-size: 36px;
-    line-height: 1.2;
-  }
-
   .programs-row {
     grid-template-columns: 1fr 240px 240px;
   }
@@ -2537,8 +2545,6 @@ input::placeholder {
   }
 
   .hero {
-    padding-top: 40px;
-    padding-bottom: 40px;
     height: auto;
   }
 
