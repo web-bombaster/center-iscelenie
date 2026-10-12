@@ -124,17 +124,13 @@ input::placeholder {
 	margin: 0;
 	color: #222;
 	font-weight: 300;
-	font-size: 56px;
+	// font-size: 56px;
+	font-size: 36px;
 	line-height: 1.1;
 	text-wrap: balance;
 	letter-spacing: -0.033em;
 
-	@media screen and (max-width: 1800px) {
-		font-size: 36px;
-	}
-
 	@media screen and (max-width: 768px) {
-		font-size: 36px;
 		line-height: 1.2;
 	}
 }
@@ -143,13 +139,13 @@ input::placeholder {
 	margin: 0;
 	color: #222;
 	font-weight: 300;
-	font-size: 48px;
+	// font-size: 48px;
+	font-size: 32px;
 	line-height: normal;
 	text-wrap: balance;
 	letter-spacing: -0.029em;
 
 	@media screen and (max-width: 1800px) {
-		font-size: 32px;
 		line-height: 1.2;
 	}
 

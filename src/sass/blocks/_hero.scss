@@ -1,12 +1,11 @@
 .hero {
-	padding-top: 134px;
-	padding-bottom: 134px;
+	padding-top: 80px;
+	padding-bottom: 80px;
 	background-color: #fafafa;
-	height: 800px;
 	display: flex;
 	align-items: center;
 	background-size: cover;
-	background-position: center;
+	background-position: center top;
 	background-image: url('../assets/images/hero.jpg');
 
 	@media screen and (max-width: 1800px) {
@@ -33,14 +32,10 @@
 }
 
 .hero-tags {
-	margin-bottom: 64px;
+	margin-bottom: 24px;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 4px;
-
-	@media screen and (max-width: 1800px) {
-		margin-bottom: 24px;
-	}
 
 	@media screen and (max-width: 768px) {
 		margin-bottom: 20px;
@@ -70,11 +65,7 @@
 }
 
 .hero-descr {
-	margin-bottom: 64px;
-
-	@media screen and (max-width: 1800px) {
-		margin-bottom: 34px;
-	}
+	margin-bottom: 34px;
 
 	@media screen and (max-width: 768px) {
 		margin-bottom: 40px;
