@@ -1,0 +1,128 @@
+.popup {
+	position: fixed;
+	inset: 0;
+
+	z-index: 1000;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 20px;
+
+	/*
+     * Начальное состояние.
+     */
+
+	visibility: hidden;
+	opacity: 0;
+
+	transition:
+		opacity 0.3s ease,
+		visibility 0.3s ease;
+}
+
+
+/*
+ * Открытый popup.
+ */
+
+.popup.is-open {
+	visibility: visible;
+	opacity: 1;
+}
+
+
+/* ========================================= */
+/* OVERLAY */
+/* ========================================= */
+
+.popup__overlay {
+	position: absolute;
+	inset: 0;
+
+	background: rgba(0, 0, 0, 0.6);
+}
+
+
+/* ========================================= */
+/* CONTENT */
+/* ========================================= */
+
+.popup__content {
+	position: relative;
+	z-index: 1;
+
+	width: 100%;
+	max-width: 500px;
+
+	max-height: calc(100vh - 40px);
+
+	overflow-y: auto;
+
+	// padding: 40px;
+
+	background: #fff;
+	border-radius: 12px;
+
+	/*
+     * Начальное состояние анимации.
+     */
+
+	transform: translateY(30px) scale(0.95);
+
+	transition:
+		transform 0.3s ease;
+
+}
+
+
+/*
+ * Финальное состояние анимации.
+ */
+
+.popup.is-open .popup__content {
+	transform: translateY(0) scale(1);
+}
+
+
+/* ========================================= */
+/* CLOSE */
+/* ========================================= */
+
+.popup__close {
+	position: absolute;
+
+	top: 10px;
+	right: 10px;
+
+	width: 36px;
+	height: 36px;
+
+	padding: 0;
+
+	border: none;
+
+	background: transparent;
+
+	font-size: 30px;
+	line-height: 1;
+
+	cursor: pointer;
+}
+
+
+/* ========================================= */
+/* CONTENT */
+/* ========================================= */
+
+.popup__title {
+	margin: 0 0 20px;
+}
+
+
+.popup__text {
+	margin: 0;
+
+	line-height: 1.6;
+}

@@ -19,10 +19,11 @@
 		padding: 40px 20px;
 	}
 
-	.popup-form & {
+	.popup__body & {
 		flex-direction: column;
 		padding: 32px 20px;
 		max-width: 600px;
+		border-radius: 0;
 	}
 }
 
@@ -35,15 +36,27 @@
 		gap: 10px;
 	}
 
-	.popup-form & {
+	.popup__body & {
 		gap: 12px;
 		text-align: center;
+
+		.h1 {
+			@media screen and (max-width: 768px) {
+				font-size: 24px;
+			}
+		}
 	}
 }
 
 .qa-descr {
 	margin: 0;
 	text-wrap: balance;
+
+	.popup__body & {
+		@media screen and (max-width: 768px) {
+			font-size: 14px;
+		}
+	}
 }
 
 .callback-form {

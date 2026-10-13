@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	// include './../js/myscripts/page-content-more.js'
 	// include './../js/myscripts/information.js'
 	// include './../js/myscripts/inputmask.js'
-	//- include './../js/myscripts/glightbox-init.js'
-	// include './../js/myscripts/fslightbox-init.js'
+	// include './../js/myscripts/popup.js'
 
 });
