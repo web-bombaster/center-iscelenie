@@ -1,7 +1,7 @@
 header.header
 	.header-top
 		.container-full.header-top__container
-			a.header-top__logo(href="/")
+			a.header-top__logo(href="/verstka/")
 				img.header-top__img(src="assets/images/logo.png", alt="Исцеление - медико-психологический центр")
 			button.header-top__burger.burger.jsMobileMenuBtnToggle(type='button' aria-label='Меню сайта')
 				span.burger-line
@@ -146,4 +146,4 @@ header.header
 			button.header-bottom__search
 				svg.header-bottom__search-icon(aria-label="Поиск") 
 					use(href="assets/icons/symbol/sprite.svg#search")
-			button.header-bottom__feedback.btn Заказать звонок
+			a.header-bottom__feedback.js-open-popup-form.btn(href="#popup-form") Заказать звонок

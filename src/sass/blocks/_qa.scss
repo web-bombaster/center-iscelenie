@@ -18,6 +18,12 @@
 		background: linear-gradient(94.88deg, #f3fef7 21.43%, #e9f3d3 84.29%, #c0ebd2 100%);
 		padding: 40px 20px;
 	}
+
+	.popup-form & {
+		flex-direction: column;
+		padding: 32px 20px;
+		max-width: 600px;
+	}
 }
 
 .qa-text {
@@ -27,6 +33,11 @@
 
 	@media screen and (max-width: 768px) {
 		gap: 10px;
+	}
+
+	.popup-form & {
+		gap: 12px;
+		text-align: center;
 	}
 }
 
@@ -83,11 +94,11 @@
 .callback-form__checkbox-text {
 	cursor: pointer;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 1.5;
 	
 	a {
-		color: rgba(34, 34, 34, 0.3);
+		color: rgba(34, 34, 34, 0.9);
 	}
 }
 
