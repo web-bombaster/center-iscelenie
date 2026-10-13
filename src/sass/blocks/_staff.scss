@@ -98,12 +98,11 @@
 	margin-bottom: 10px;
 	color: #222;
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 20px;
 	line-height: normal;
 	text-wrap: balance;
 
 	@media screen and (max-width: 768px) {
-		font-size: 20px;
 		line-height: 1.5;
 	}
 
@@ -133,7 +132,7 @@
 .staff-link {
 	margin-top: 20px;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 1.1;
 	text-decoration: underline;
 	text-transform: uppercase;
@@ -142,10 +141,6 @@
 
 	&:hover {
 		color: #03923e;
-	}
-
-	@media screen and (max-width: 768px) {
-		font-size: 16px;
 	}
 
 	.slider-nav {

@@ -405,7 +405,7 @@ input::placeholder {
 .footer-nav__item {
   color: #fff;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.3;
   text-transform: uppercase;
 }
@@ -470,7 +470,7 @@ input::placeholder {
   gap: 5px;
   color: #fff;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .footer-text__block p {
@@ -1433,7 +1433,7 @@ input::placeholder {
   margin-bottom: 10px;
   color: #222;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   line-height: normal;
   text-wrap: balance;
 }
@@ -1460,7 +1460,7 @@ input::placeholder {
 .staff-link {
   margin-top: 20px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.1;
   text-decoration: underline;
   text-transform: uppercase;
@@ -1920,7 +1920,7 @@ input::placeholder {
 
 .inf-item__title {
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.3;
   text-transform: uppercase;
   color: #222;
@@ -2590,17 +2590,12 @@ input::placeholder {
   }
 
   .staff-item__name {
-    font-size: 20px;
     line-height: 1.5;
   }
 
   .staff-item__descr {
     font-size: 14px;
     line-height: 1.3;
-  }
-
-  .staff-link {
-    font-size: 16px;
   }
 
   .steps {
