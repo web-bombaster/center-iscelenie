@@ -318,9 +318,9 @@ input::placeholder {
 .sections-column {
   display: flex;
   flex-direction: column;
-  gap: 160px;
-  padding-top: 160px;
-  padding-bottom: 160px;
+  gap: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .footer {
@@ -1086,7 +1086,7 @@ input::placeholder {
   text-decoration: none;
   transition: .25s;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.3;
   text-transform: uppercase;
   color: #222;
@@ -1102,7 +1102,7 @@ input::placeholder {
 
 .menu-link-btn {
   position: absolute;
-  top: 14px;
+  top: 12px;
   right: 0;
   content: "";
   width: 24px;
@@ -2451,9 +2451,9 @@ input::placeholder {
   }
 
   .sections-column {
-    gap: 80px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .footer {
@@ -2532,6 +2532,11 @@ input::placeholder {
 
   .hero-descr {
     margin-bottom: 40px;
+  }
+
+  .advantages {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .advantages-item__icon {
