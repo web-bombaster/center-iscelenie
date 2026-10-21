@@ -440,9 +440,17 @@ input::placeholder {
   line-height: 1.5;
 }
 
+.footer-btn.footer-btn {
+  background-color: #00acac;
+}
+
+.footer-btn.footer-btn:hover {
+  background-color: #099;
+}
+
 .footer-phons {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   gap: 6px;
   margin-bottom: 40px;
 }
@@ -810,7 +818,7 @@ input::placeholder {
   background-color: #fafafa;
   padding-top: 80px;
   padding-bottom: 80px;
-  height: 500px;
+  height: 600px;
 }
 
 .hero-box {
@@ -2036,14 +2044,14 @@ input::placeholder {
   color: #fff;
   border-radius: 100px;
   border: none;
-  background-color: #02ad4a;
+  background-color: #00acac;
   cursor: pointer;
   transition: .25s ease-in;
 }
 
 .btn-arrow:hover,
 .btn-arrow:hover::after {
-  background-color: #03923e;
+  background-color: #099;
 }
 
 .btn-arrow::after {
@@ -2055,7 +2063,7 @@ input::placeholder {
   height: 100%;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  background-color: #02ad4a;
+  background-color: #00acac;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32'%3E%3Cpath stroke='%23fff' stroke-linecap='square' stroke-linejoin='round' stroke-width='1.5' d='M9.334 22.667 22.667 9.333m0 10.667V9.333H12'/%3E%3C/svg%3E");
   background-size: 32px;
   background-position: center;
@@ -2283,7 +2291,6 @@ input::placeholder {
     background-position: center top;
     padding-top: 40px;
     padding-bottom: 40px;
-    height: initial;
   }
 }
 
@@ -2810,6 +2817,12 @@ input::placeholder {
     padding-bottom: 40px;
   }
 
+  .hero {
+    background: url(../assets/images/hero-mob-f53d5a16ef.webp) center bottom/100% auto no-repeat,linear-gradient(180deg,#ddefe1 0,#cae2da 100%) center bottom/100% auto no-repeat;
+    padding-bottom: 104%;
+    height: initial;
+  }
+
   .staff-item__img-box {
     max-width: 490px;
   }
@@ -2824,7 +2837,7 @@ input::placeholder {
     height: 44px;
   }
 
-  .footer-btn {
+  .footer-btn.footer-btn {
     width: 100%;
   }
 }
@@ -2832,6 +2845,12 @@ input::placeholder {
 @media screen and (max-width:460px) {
   .information-top__btn {
     justify-self: stretch;
+  }
+}
+
+@media screen and (max-height:920px) {
+  .hero {
+    height: 500px;
   }
 }
 

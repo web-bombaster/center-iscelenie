@@ -7,17 +7,32 @@
 	background-color: #fafafa;
 	padding-top: 80px;
 	padding-bottom: 80px;
-	height: 500px;
+	height: 600px;
+	
+	@media screen and (max-height: 920px) {
+		height: 500px;
+	}
 
 	@media screen and (max-width: 1800px) {
 		background-position: center top;
 		padding-top: 40px;
 		padding-bottom: 40px;
-		height: initial;
 	}
-
+	
 	@media screen and (max-width: 768px) {
 		height: auto;
+	}
+	
+	@media screen and (max-width: 600px) {
+		height: initial;
+		background:
+			url('../assets/images/hero-mob.png'),
+			linear-gradient(180deg, #ddefe1 0%, #cae2da 100%);
+		background-position: center bottom;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		padding-bottom: 104%;
+		height: initial;
 	}
 }
 

@@ -238,7 +238,13 @@
 
 .btn {}
 
-.footer-btn {
+.footer-btn.footer-btn {
+	background-color: #00ACAC;
+	
+	&:hover {
+		background-color: #009999;
+	}
+
 	@media screen and (max-width: 480px) {
 		width: 100%;
 	}
@@ -246,7 +252,7 @@
 
 .footer-phons {
 	display: flex;
-	flex-direction: column-reverse;
+	flex-direction: column;
 	gap: 6px;
 	margin-bottom: 40px;
 }
