@@ -7,10 +7,10 @@
 	background-color: #fafafa;
 	padding-top: 80px;
 	padding-bottom: 80px;
-	height: 600px;
+	height: 500px;
 	
-	@media screen and (max-height: 920px) {
-		height: 500px;
+	@media screen and (min-height: 920px) and (min-width: 1800px) {
+		height: 600px;
 	}
 
 	@media screen and (max-width: 1800px) {
@@ -24,7 +24,6 @@
 	}
 	
 	@media screen and (max-width: 600px) {
-		height: initial;
 		background:
 			url('../assets/images/hero-mob.png'),
 			linear-gradient(180deg, #ddefe1 0%, #cae2da 100%);

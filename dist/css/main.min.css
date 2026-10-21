@@ -818,7 +818,7 @@ input::placeholder {
   background-color: #fafafa;
   padding-top: 80px;
   padding-bottom: 80px;
-  height: 600px;
+  height: 500px;
 }
 
 .hero-box {
@@ -2256,6 +2256,12 @@ input::placeholder {
   }
 }
 
+@media screen and (min-height:920px) and (min-width:1800px) {
+  .hero {
+    height: 600px;
+  }
+}
+
 @media screen and (max-width:1820px) {
   .header {
     position: fixed;
@@ -2845,12 +2851,6 @@ input::placeholder {
 @media screen and (max-width:460px) {
   .information-top__btn {
     justify-self: stretch;
-  }
-}
-
-@media screen and (max-height:920px) {
-  .hero {
-    height: 500px;
   }
 }
 
