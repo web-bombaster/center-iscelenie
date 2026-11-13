@@ -14,5 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	// include './../js/myscripts/information.js'
 	// include './../js/myscripts/inputmask.js'
 	// include './../js/myscripts/popup.js'
+	// include './../js/myscripts/cookie.js'
 
 });

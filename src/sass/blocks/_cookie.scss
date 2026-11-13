@@ -1,0 +1,256 @@
+.cookie {
+	position: fixed;
+	z-index: 999;
+	inset: 20px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+
+.cookie.is-visible {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.cookie__body {
+	background: #FFFFFF;
+	position: relative;
+	width: 1408px;
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.cookie__body::before {
+	content: "";
+	position: absolute;
+	border-radius: inherit;
+	pointer-events: none;
+	padding: 4px;
+	inset: 0px;
+	mask: linear-gradient(rgb(255, 255, 255) 0px, rgb(255, 255, 255) 0px) content-box exclude, linear-gradient(rgb(255, 255, 255) 0px, rgb(255, 255, 255) 0px);
+	background: linear-gradient(94.88deg, #F3FEF7 2.91%, #E9F3D3 80.58%, #C0EBD2 100%);
+}
+
+.cookie__title {
+	font-weight: 400;
+	margin-top: 0;
+	font-size: 24px;
+	line-height: 1.3;
+	letter-spacing: 0%;
+	margin-bottom: 16px;
+}
+
+.cookie__text {
+	color: #545454;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0%;
+	max-width: 1160px;
+}
+
+.cookie__link {
+	color: #1C1D20;
+}
+
+.cookie__buttons {
+	display: flex;
+	margin-top: 24px;
+	gap: 16px;
+}
+
+.cookie__btn {
+	font-weight: 500;
+	font-size: 20px;
+	cursor: pointer;
+	line-height: 110.00000000000001%;
+	letter-spacing: 0%;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	padding: 13px 20px;
+	border-radius: 100px;
+	border: none;
+	transition: all 0.3s ease;
+}
+
+.cookie__btn--blue {
+	color: #fff;
+	background-color: #00ACAC;
+}
+
+.cookie__btn--green {
+	color: #fff;
+	background-color: #A6CD50;
+}
+
+.cookie__inner {
+	max-height: 100%;
+	overflow: auto;
+	padding: 51px 64px;
+}
+
+.cookie__settings {
+	display: none;
+}
+
+.cookie__settings.is-active {
+	display: block;
+}
+
+.cookie__main.is-hidden {
+	display: none;
+}
+
+.cookie__settings-back {
+	cursor: pointer;
+}
+
+.cookie__settings-title {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	margin-bottom: 8px;
+}
+
+.cookie__list {
+	margin-top: 28px;
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+
+.cookie__item {
+	padding-right: 103px;
+	position: relative;
+}
+
+.cookie__item-title {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	letter-spacing: 0%;
+	margin-bottom: 8px;
+}
+
+.cookie__item-text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0%;
+	max-width: 1160px;
+}
+
+.switch {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	width: 44px;
+	height: 24px;
+	cursor: pointer;
+}
+
+.switch__input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.switch__slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #1F1F1F1F;
+	border-radius: 96px;
+	transition: background-color 0.3s ease;
+}
+
+.switch__slider::before {
+	content: "";
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	left: 2px;
+	bottom: 2px;
+	background-color: white;
+	border-radius: 50%;
+	transition: transform 0.3s ease;
+	box-shadow: 0px 1px 4px 0px #3C538717;
+	box-shadow: 0px 1px 10px 1px #3C53870D;
+
+}
+
+.switch__input:checked + .switch__slider {
+	background-color: #32D47D;
+}
+
+.switch__input:checked + .switch__slider::before {
+	transform: translateX(20px);
+}
+
+.switch__input:focus-visible + .switch__slider {
+	outline: 2px solid #007aff;
+	outline-offset: 2px;
+}
+
+.switch--disabled {
+	pointer-events: none;
+}
+
+.switch--disabled .switch__input:checked + .switch__slider {
+	background: #1F1F1F1F;
+}
+
+@media(max-width: 768px) {
+	.cookie__btn {
+		font-size: 16px;
+	}
+
+	.cookie__buttons {
+		gap: 8px;
+		margin-top: 28px;
+	}
+
+	.switch {
+		top: 3px;
+	}
+
+	.cookie__body::before {
+		padding: 2px;
+	}
+
+	.cookie__item {
+		padding-right: 0;
+	}
+
+	.cookie__item-title {
+		padding-right: 120px;
+	}
+
+	.cookie__item-text {
+		font-size: 14px;
+		line-height: 130%;
+		letter-spacing: 0%;
+	}
+
+	.cookie {
+		inset: 10px;
+	}
+
+	.cookie__inner {
+		padding: 20px;
+	}
+}
