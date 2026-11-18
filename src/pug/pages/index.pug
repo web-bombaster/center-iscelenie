@@ -1,4 +1,4 @@
-- var pageType = 'home';
+- var pageType = 'price';
 //- Для pageType указать тип страницы. Варианты:
 	home - главная страница
 	about - страница о нас
@@ -7,37 +7,34 @@ doctype html
 html(lang="ru-RU")
 	include ../blocks/head
 	body#top
-
-
 		include ../blocks/header
-		include ../blocks/hero
-		include ../blocks/advantages
-		.sections-column 
-			include ../blocks/qa
-			include ../blocks/work-areas
-			include ../blocks/staff
-			include ../blocks/programs
-			include ../blocks/steps
-			include ../blocks/guarantees
-			include ../blocks/page-content
-			include ../blocks/reviews
-			include ../blocks/faq
-			include ../blocks/information
 		
 		//- home - главная страница
 		if pageType === 'home'
-			//- include ../blocks/main-home
+			include ../blocks/hero
+			include ../blocks/advantages
+			.sections-column 
+				include ../blocks/qa
+				include ../blocks/work-areas
+				include ../blocks/staff
+				include ../blocks/programs
+				include ../blocks/steps
+				include ../blocks/guarantees
+				include ../blocks/page-content
+				include ../blocks/reviews
+				include ../blocks/faq
+				include ../blocks/information
 
-		//- about - страница о нас
-		if pageType === 'about'
-			include ../blocks/breadcrumbs
-			include ../blocks/main-about
+		//- price - страница о нас
+		if pageType === 'price'
+			include ../blocks/hero-price
 
 
+		//- Общие блоки для всех страниц
 		include ../blocks/footer
 		include ../blocks/mobile-menu
 		include ../blocks/popup-form
-		include ../blocks/cookie
+		//- include ../blocks/cookie
 
 		//- Подключаем скрипты и стили
 		include ../blocks/sourse
