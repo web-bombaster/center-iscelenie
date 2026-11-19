@@ -213,29 +213,57 @@
         </div>
       </section>
       <div class="faq">
-        <div class="faq-container container"> 
-          <div class="faq-box"> 
+        <div class="faq-container container">
+          <div class="faq-box">
             <div class="faq-top">
               <h2 class="h2 faq-title">Вопрос – ответ</h2>
               <button class="faq-btn btn-arrow" data-popup="callback">Оставить заявку</button>
             </div>
             <ul class="faq-list">
               <li class="faq-list__item faq-item">
-                <div class="faq-item__title">К кому лучше записаться на первичный прием — к психиатру или психотерапевту?</div>
+                <div class="faq-item__title">Входит ли стоимость лекарств в цену курса?</div>
+                <div class="faq-item__content">Стоимость лекарственных препаратов рассчитывается отдельно от курса терапии: она зависит от назначенной схемы и подобранных врачом медикаментов. Точную сумму специалист озвучит после консультации.</div>
+              </li>
+              <li class="faq-list__item faq-item">
+                <div class="faq-item__title">Можно ли пройти лечение полностью анонимно?</div>
                 <div class="faq-item__content">Да, мы гарантируем полную конфиденциальность. Мы проводим анонимное лечение алкоголизма без постановки на учет и передачи данных в государственные диспансеры.</div>
               </li>
               <li class="faq-list__item faq-item">
-                <div class="faq-item__title">Нужно ли брать больничный лист для посещения дневного стационара?</div>
-                <div class="faq-item__content">Это зависит от вашего самочувствия и графика работы. Пребывание в дневном стационаре обычно занимает несколько часов в день — за это время вы успеваете пройти все назначенные медицинские процедуры и сеансы психотерапии. График посещений составляется индивидуально, поэтому многие пациенты комфортно совмещают терапию с работой или учебой. Если же вам требуется перерыв для полноценного восстановления, мы можем оформить официальный больничный лист. При этом мы строго соблюдаем анонимность: в документе не будет указан специфический диагноз, раскрывающий профиль клиники.</div>
+                <div class="faq-item__title">Сколько стоит экстренная помощь при запое?</div>
+                <div class="faq-item__content">Стоимость экстренной помощи при запое зависит от состояния пациента и объема необходимых процедур. Уточнить цену и вызвать специалиста можно по телефону или через заявку на сайте.</div>
               </li>
               <li class="faq-list__item faq-item">
-                <div class="faq-item__title">Как подготовиться к первой консультации в вашем центре?</div>
-                <div class="faq-item__content">Это зависит от вашего самочувствия и графика работы. Пребывание в дневном стационаре обычно занимает несколько часов в день — за это время вы успеваете пройти все назначенные медицинские процедуры и сеансы психотерапии. График посещений составляется индивидуально, поэтому многие пациенты комфортно совмещают терапию с работой или учебой. Если же вам требуется перерыв для полноценного восстановления, мы можем оформить официальный больничный лист. При этом мы строго соблюдаем анонимность: в документе не будет указан специфический диагноз, раскрывающий профиль клиники.</div>
+                <div class="faq-item__title">Как узнать стоимость приема специалиста?</div>
+                <div class="faq-item__content">Актуальные цены на прием специалистов указаны в прайсе на сайте. Если нужного специалиста нет в списке, стоимость можно уточнить по телефону или в заявке на сайте.</div>
+              </li>
+              <li class="faq-list__item faq-item">
+                <div class="faq-item__title">Есть ли помощь для детей и подростков?</div>
+                <div class="faq-item__content">Да, в нашем центре помощь оказывают детям и подросткам. Формат работы и стоимость зависят от возраста и запроса — подробности уточняйте по телефону или в заявке на сайте.</div>
               </li>
             </ul>
           </div>
         </div>
       </div>
+      <section class="qa">
+        <div class="qa-container container">
+          <div class="qa-box">
+            <div class="qa-text">
+              <h2 class="h1">Оставьте контакты для связи со специалистом центра</h2>
+              <p class="qa-descr">Администратор перезвонит в течение 15 минут, ответит на вопросы по ценам и поможет выбрать удобное время приема</p>
+            </div>
+            <form class="qa-form callback-form" action="/callback/" method="post">
+              <input class="callback-form__input" type="text" name="name" placeholder="Имя *" autocomplete="name" required>
+              <input class="callback-form__input" type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+              <div class="callback-form__agreement">
+                <label class="callback-form__checkbox">
+                  <input class="callback-form__checkbox-input visually-hidden" type="checkbox" name="agreement" required><span class="checkbox__box" aria-hidden="true"></span><span class="callback-form__checkbox-text"><a href="/privacy/" target="_blank">Согласие на обработку персональных данных</a></span>
+                </label>
+              </div>
+              <button class="callback-form__submit btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
     <footer class="footer">
       <div class="footer-container container">

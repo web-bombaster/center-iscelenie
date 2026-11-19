@@ -989,10 +989,6 @@ input::placeholder {
 
 .header-bottom__feedback.header-bottom__feedback {
   flex-shrink: 0;
-  background-color: #a6cd50;
-}
-.header-bottom__feedback.header-bottom__feedback:hover {
-  background-color: #90b345;
 }
 
 .header-nav {
@@ -1271,8 +1267,8 @@ input::placeholder {
   aspect-ratio: 1/1;
   align-self: flex-start;
   border-radius: 50%;
-  background-color: #41c177;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32'%3E%3Cpath fill='%2341c177' d='M0 0h32v32H0z'/%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M11.949 27.292c-3.923-3.007-9.282-7.974-9.282-12.67C2.667 6.777 10 3.848 16 9.908c6-6.06 13.333-3.131 13.333 4.714 0 4.696-5.36 9.663-9.282 12.67-1.776 1.36-2.664 2.041-4.051 2.041s-2.275-.68-4.051-2.041M21.999 11a1 1 0 0 1 1 1v1.667h1.668a1 1 0 0 1 0 2H23v1.666a1 1 0 1 1-2 0v-1.666h-1.667a1 1 0 1 1 0-2H21V12a1 1 0 0 1 1-1' clip-rule='evenodd'/%3E%3C/svg%3E%0A");
+  background-color: #8BE4B4;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32'%3E%3Cpath fill='%238BE4B4' d='M0 0h32v32H0z'/%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M11.949 27.292c-3.923-3.007-9.282-7.974-9.282-12.67C2.667 6.777 10 3.848 16 9.908c6-6.06 13.333-3.131 13.333 4.714 0 4.696-5.36 9.663-9.282 12.67-1.776 1.36-2.664 2.041-4.051 2.041s-2.275-.68-4.051-2.041M21.999 11a1 1 0 0 1 1 1v1.667h1.668a1 1 0 0 1 0 2H23v1.666a1 1 0 1 1-2 0v-1.666h-1.667a1 1 0 1 1 0-2H21V12a1 1 0 0 1 1-1' clip-rule='evenodd'/%3E%3C/svg%3E%0A");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1685,10 +1681,6 @@ input::placeholder {
 
 .callback-form__submit.callback-form__submit {
   margin-top: 16px;
-  background-color: #a6cd50;
-}
-.callback-form__submit.callback-form__submit:hover {
-  background-color: #90b345;
 }
 
 /* Кастомный квадрат */
@@ -3370,7 +3362,7 @@ input::placeholder {
   cursor: pointer;
   border: none;
   border-radius: 100px;
-  background-color: #02ad4a;
+  background-color: #00acac;
   padding: 17px 26px 15px 26px;
   color: #fff;
   font-weight: 500;
@@ -3379,7 +3371,7 @@ input::placeholder {
   text-transform: uppercase;
 }
 .btn:hover {
-  background-color: #059c44;
+  background-color: #009999;
 }
 @media (hover: hover) {
   .btn:hover {
