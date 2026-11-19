@@ -162,6 +162,115 @@
       </div>
     </section>
     <div class="sections-column">
+      <section class="price-tabs">
+        <div class="price-tabs__container container">
+          <div class="price-tabs__nav" role="tablist" aria-label="Категории услуг">
+            <button class="price-tabs__btn is-active" type="button" role="tab" id="price-tab-consultations" aria-controls="price-panel-consultations" aria-selected="true" data-tab="consultations"><span class="price-tabs__btn-text">Консультации</span><span class="price-tabs__chevron">
+                <svg class="price-tabs__chevron-icon" aria-hidden="true">
+                  <use href="assets/icons/symbol/sprite.svg#chevron-down"></use>
+                </svg></span></button>
+            <button class="price-tabs__btn" type="button" role="tab" id="price-tab-therapy" aria-controls="price-panel-therapy" aria-selected="false" tabindex="-1" data-tab="therapy"><span class="price-tabs__btn-text">Лечение зависимостей</span><span class="price-tabs__chevron">
+                <svg class="price-tabs__chevron-icon" aria-hidden="true">
+                  <use href="assets/icons/symbol/sprite.svg#chevron-down"></use>
+                </svg></span></button>
+            <button class="price-tabs__btn" type="button" role="tab" id="price-tab-day" aria-controls="price-panel-day" aria-selected="false" tabindex="-1" data-tab="day"><span class="price-tabs__btn-text">Дневной стационар</span><span class="price-tabs__chevron">
+                <svg class="price-tabs__chevron-icon" aria-hidden="true">
+                  <use href="assets/icons/symbol/sprite.svg#chevron-down"></use>
+                </svg></span></button>
+            <button class="price-tabs__btn" type="button" role="tab" id="price-tab-diagnostics" aria-controls="price-panel-diagnostics" aria-selected="false" tabindex="-1" data-tab="diagnostics"><span class="price-tabs__btn-text">Диагностика</span><span class="price-tabs__chevron">
+                <svg class="price-tabs__chevron-icon" aria-hidden="true">
+                  <use href="assets/icons/symbol/sprite.svg#chevron-down"></use>
+                </svg></span></button>
+          </div>
+          <div class="price-tabs__panel is-active" id="price-panel-consultations" role="tabpanel" aria-labelledby="price-tab-consultations" data-tab-panel="consultations">
+            <h2 class="price-tabs__title h2">Цены на консультации психиатра, нарколога, психотерапевта</h2>
+            <div class="price-tabs__list">
+              <div class="price-tabs__row">
+                <div class="price-tabs__name"><span class="price-tabs__mark"></span><span class="price-tabs__name-text">Первичная консультация главного врача, врача-психиатра, нарколога, психотерапевта Зубко М.М.</span></div>
+                <div class="price-tabs__meta"><span class="price-tabs__duration">до 60 минут</span><span class="price-tabs__price">6 000 ₽</span></div>
+                <div class="price-tabs__order-cell">
+                  <button class="price-tabs__order" type="button" data-popup="callback">записаться</button>
+                </div>
+              </div>
+              <div class="price-tabs__row">
+                <div class="price-tabs__name"><span class="price-tabs__mark"></span><span class="price-tabs__name-text">Повторная консультация главного врача, врача-психиатра, нарколога, психотерапевта Зубко М.М.</span></div>
+                <div class="price-tabs__meta"><span class="price-tabs__duration">до 30 минут</span><span class="price-tabs__price">4 000 ₽</span></div>
+                <div class="price-tabs__order-cell">
+                  <button class="price-tabs__order" type="button" data-popup="callback">записаться</button>
+                </div>
+              </div>
+              <div class="price-tabs__row">
+                <div class="price-tabs__name"><span class="price-tabs__mark"></span><span class="price-tabs__name-text">Консультация дежурного врача</span></div>
+                <div class="price-tabs__meta"><span class="price-tabs__duration">до 50 минут</span><span class="price-tabs__price">4 000 ₽</span></div>
+                <div class="price-tabs__order-cell">
+                  <button class="price-tabs__order" type="button" data-popup="callback">записаться</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="price-tabs__panel" id="price-panel-therapy" role="tabpanel" aria-labelledby="price-tab-therapy" aria-hidden="true" data-tab-panel="therapy">
+            <h2 class="price-tabs__title h2">Стоимость лечения алкоголизма и вывода из запоя</h2>
+            <div class="price-tabs__list">
+              <div class="price-tabs__row price-tabs__row--therapy">
+                <div class="price-tabs__name"><span class="price-tabs__mark"></span><span class="price-tabs__name-text">Снятие алкогольной интоксикации</span></div>
+                <p class="price-tabs__descr">Инфузионная терапия длительностью 12 часов для стабилизации состояния</p><span class="price-tabs__price">9 000 ₽</span>
+                <div class="price-tabs__order-cell">
+                  <button class="price-tabs__order" type="button" data-popup="callback">записаться</button>
+                </div>
+              </div>
+              <div class="price-tabs__row price-tabs__row--therapy">
+                <div class="price-tabs__name"><span class="price-tabs__mark"></span><span class="price-tabs__name-text">Прерывание запоя</span></div>
+                <p class="price-tabs__descr">Комплексное купирование абстиненции в условиях стационара (1 сутки)</p><span class="price-tabs__price">13 000 ₽</span>
+                <div class="price-tabs__order-cell">
+                  <button class="price-tabs__order" type="button" data-popup="callback">записаться</button>
+                </div>
+              </div>
+              <div class="price-tabs__row price-tabs__row--therapy">
+                <div class="price-tabs__name"><span class="price-tabs__mark"></span><span class="price-tabs__name-text">Курс лечения последствий употребления ПАВ</span></div>
+                <p class="price-tabs__descr">Базовая программа реабилитации и медикаментозной поддержки (6 суток)</p><span class="price-tabs__price">70 000 ₽</span>
+                <div class="price-tabs__order-cell">
+                  <button class="price-tabs__order" type="button" data-popup="callback">записаться</button>
+                </div>
+              </div>
+              <div class="price-tabs__row price-tabs__row--therapy">
+                <div class="price-tabs__name"><span class="price-tabs__mark"></span><span class="price-tabs__name-text">Расширенный курс терапии</span></div>
+                <p class="price-tabs__descr">Углубленная программа восстановления с психотерапией (9 суток)</p><span class="price-tabs__price">120 000 ₽</span>
+                <div class="price-tabs__order-cell">
+                  <button class="price-tabs__order" type="button" data-popup="callback">записаться</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="price-tabs__panel" id="price-panel-day" role="tabpanel" aria-labelledby="price-tab-day" aria-hidden="true" data-tab-panel="day">
+            <h2 class="price-tabs__title h2">Стоимость лечения в дневном стационаре</h2>
+            <div class="price-tabs__list">
+              <div class="price-tabs__row price-tabs__row--day">
+                <div class="price-tabs__name"><span class="price-tabs__mark"></span><span class="price-tabs__name-text">Лечение душевных расстройств в условиях дневного стационара</span></div>
+                <div class="price-tabs__options">
+                  <div class="price-tabs__option"><span class="price-tabs__duration">10 дней</span><span class="price-tabs__price">70 000 ₽</span></div>
+                  <div class="price-tabs__option"><span class="price-tabs__duration">15 дней</span><span class="price-tabs__price">90 000 ₽</span></div>
+                  <div class="price-tabs__option"><span class="price-tabs__duration">30 дней</span><span class="price-tabs__price">120 000 ₽</span></div>
+                </div>
+                <div class="price-tabs__order-cell">
+                  <button class="price-tabs__order" type="button" data-popup="callback">записаться</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="price-tabs__panel" id="price-panel-diagnostics" role="tabpanel" aria-labelledby="price-tab-diagnostics" aria-hidden="true" data-tab-panel="diagnostics">
+            <h2 class="price-tabs__title h2">Цены на консультации психиатра, нарколога, психотерапевта</h2>
+            <div class="price-tabs__list">
+              <div class="price-tabs__row">
+                <div class="price-tabs__name"><span class="price-tabs__mark"></span><span class="price-tabs__name-text">Экспериментально-психологическое исследование</span></div>
+                <div class="price-tabs__meta"><span class="price-tabs__duration">до 240 минут</span><span class="price-tabs__price">10 000 ₽</span></div>
+                <div class="price-tabs__order-cell">
+                  <button class="price-tabs__order" type="button" data-popup="callback">записаться</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="makes-cost">
         <div class="container makes-cost__container">
           <div class="makes-cost__box">

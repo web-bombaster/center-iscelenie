@@ -166,9 +166,9 @@ input::placeholder {
 .sections-column {
 	display: flex;
 	flex-direction: column;
-	gap: 80px;
-	padding-top: 80px;
-	padding-bottom: 80px;
+	gap: 160px;
+	padding-top: 160px;
+	padding-bottom: 160px;
 
 	@media screen and (max-width: 768px) {
 		gap: 80px;

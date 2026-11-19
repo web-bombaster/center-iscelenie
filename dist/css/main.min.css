@@ -455,9 +455,9 @@ input::placeholder {
 .sections-column {
   display: flex;
   flex-direction: column;
-  gap: 80px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  gap: 160px;
+  padding-top: 160px;
+  padding-bottom: 160px;
 }
 @media screen and (max-width: 768px) {
   .sections-column {
@@ -3481,6 +3481,256 @@ input::placeholder {
   }
 }
 
+.price-tabs__container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.price-tabs__nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.price-tabs__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 82px;
+  border: none;
+  border-radius: 100px;
+  padding: 16px 32px;
+  background-color: #fafafa;
+  color: #222;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+.price-tabs__btn:hover {
+  background-color: #f3f7f7;
+}
+.price-tabs__btn.is-active {
+  background-color: #c7f8dd;
+}
+.price-tabs__btn:focus-visible {
+  outline: 2px solid #00acac;
+  outline-offset: 2px;
+}
+
+.price-tabs__chevron {
+  display: none;
+}
+
+.price-tabs__chevron-icon {
+  display: block;
+  width: 15px;
+  height: 8px;
+}
+
+.price-tabs__panel {
+  display: none;
+  flex-direction: column;
+  gap: 40px;
+}
+.price-tabs__panel.is-active {
+  display: flex;
+}
+
+.price-tabs__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-tabs__row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 218px 218px 157px;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.15);
+  padding: 30px 62px 30px 0;
+}
+
+.price-tabs__row--therapy {
+  grid-template-columns: minmax(0, 1fr) 341px 218px 157px;
+}
+
+.price-tabs__row--day {
+  grid-template-columns: minmax(0, 1fr) 456px 157px;
+}
+
+.price-tabs__name {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  min-width: 0;
+}
+
+.price-tabs__mark {
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background-color: #c7f8dd;
+}
+
+.price-tabs__name-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.price-tabs__descr {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+}
+@media screen and (max-width: 1200px) {
+  .price-tabs__descr {
+    font-size: 16px;
+  }
+}
+
+.price-tabs__meta {
+  display: contents;
+}
+
+.price-tabs__duration {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.price-tabs__price {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.price-tabs__options {
+  display: grid;
+  grid-template-columns: 218px 218px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.price-tabs__option {
+  display: contents;
+}
+
+.price-tabs__order-cell {
+  display: flex;
+  justify-content: center;
+}
+
+.price-tabs__order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 157px;
+  height: 50px;
+  border: 1px solid #00acac;
+  border-radius: 100px;
+  padding: 16px 26px;
+  background-color: #fff;
+  color: #00acac;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.price-tabs__order:hover {
+  background-color: #00acac;
+  color: #fff;
+}
+.price-tabs__order:focus-visible {
+  outline: 2px solid #00acac;
+  outline-offset: 2px;
+}
+
+@media screen and (max-width: 1200px) {
+  .price-tabs__nav {
+    display: flex;
+    flex-direction: column;
+    border-radius: 28px;
+    background-color: #fafafa;
+  }
+  .price-tabs__btn {
+    justify-content: space-between;
+    height: 56px;
+    padding: 16px 32px;
+    text-align: left;
+  }
+  .price-tabs__chevron {
+    display: flex;
+    flex-shrink: 0;
+    transform: rotate(180deg);
+  }
+  .price-tabs__btn:not(.is-active) .price-tabs__chevron {
+    display: none;
+  }
+  .price-tabs__list {
+    gap: 40px;
+  }
+  .price-tabs__row,
+  .price-tabs__row--therapy,
+  .price-tabs__row--day {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0 0 40px;
+  }
+  .price-tabs__name {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .price-tabs__meta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .price-tabs__meta .price-tabs__price {
+    order: -1;
+  }
+  .price-tabs__duration {
+    font-size: 16px;
+  }
+  .price-tabs__price {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: normal;
+  }
+  .price-tabs__options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .price-tabs__option {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .price-tabs__order-cell {
+    justify-content: flex-start;
+  }
+  .price-tabs__order {
+    height: 48px;
+  }
+}
 .btn {
   transition: all 0.25s;
   cursor: pointer;
