@@ -128,6 +128,7 @@ input::placeholder {
 
 	@media screen and (max-width: 768px) {
 		line-height: 1.2;
+		font-size: 32px;
 	}
 }
 
@@ -146,7 +147,7 @@ input::placeholder {
 	}
 
 	@media screen and (max-width: 768px) {
-		font-size: 30px;
+		font-size: 26px;
 		line-height: 1.2;
 	}
 }
@@ -170,8 +171,8 @@ input::placeholder {
 	padding-bottom: 80px;
 
 	@media screen and (max-width: 768px) {
-		gap: 40px;
-		padding-top: 40px;
-		padding-bottom: 40px;
+		gap: 80px;
+		padding-top: 80px;
+		padding-bottom: 80px;
 	}
 }

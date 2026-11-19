@@ -13,7 +13,7 @@ html(lang="ru-RU")
 		if pageType === 'home'
 			include ../blocks/hero
 			include ../blocks/advantages
-			.sections-column 
+			.sections-column
 				include ../blocks/qa
 				include ../blocks/work-areas
 				include ../blocks/staff
@@ -28,6 +28,11 @@ html(lang="ru-RU")
 		//- price - страница о нас
 		if pageType === 'price'
 			include ../blocks/hero-price
+			.sections-column
+				include ../blocks/makes-cost
+				include ../blocks/how-to
+				include ../blocks/anonymous
+				include ../blocks/faq-price
 
 
 		//- Общие блоки для всех страниц

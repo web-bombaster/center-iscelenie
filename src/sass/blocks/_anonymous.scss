@@ -1,0 +1,49 @@
+.anonymous {}
+
+.anonymous-container {}
+
+.anonymous-box {
+	// display: flex;
+	// flex-direction: column;
+	// gap: 40px;
+}
+
+.anonymous-top {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-areas:
+		"a b"
+		"c d"
+	;
+	gap: 40px;
+
+	@media screen and (max-width: 992px) {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"a"
+			"c"
+			"d"
+		;
+	}
+}
+
+.anonymous-top__title {
+	grid-area: a;
+}
+
+.anonymous-top__descr {
+	margin: 0;
+	grid-area: c;
+	opacity: 0.8;
+	text-wrap: balance;
+}
+
+.anonymous-top__btn {
+	grid-area: d;
+	align-self: center;
+
+	@media screen and (max-width: 992px) {
+		justify-self: start;
+		margin-top: 10px;
+	}
+}

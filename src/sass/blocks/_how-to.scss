@@ -1,0 +1,70 @@
+.how-to {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background: linear-gradient(94.88deg, #f3f7f7 1.79%, rgba(192, 235, 210, 0.6) 70.73%, rgba(228, 249, 214, 0.4) 90.18%, #f2fbf6 100%);
+
+	@media screen and (max-width: 768px) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		background: linear-gradient(119.51deg, #f3fef7 0%, #e4f9d6 80%, #c0ebd2 100%);
+	}
+}
+
+.how-to__container {}
+
+.how-to__box {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.how-to__title {}
+
+.how-to__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+
+	@media screen and (max-width: 992px) {
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+}
+
+.how-to__item {
+	padding: 32px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	border-radius: 30px;
+	background-color: #fff;
+
+	@media screen and (max-width: 992px) {
+		padding: 10px 20px 20px;
+	}
+}
+
+.how-to__item-num {
+	margin-bottom: 30px;
+	font-size: 40px;
+	font-weight: 300;
+}
+
+.how-to__item-name {
+	margin-top: auto;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.3;
+	text-transform: uppercase;
+
+	@media screen and (max-width: 768px) {
+		line-height: normal;
+	}
+}
+
+.how-to__item-descr {
+	margin: 0;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+}

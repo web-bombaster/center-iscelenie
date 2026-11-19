@@ -23,7 +23,11 @@
 @use "blocks/information";
 @use "blocks/popup";
 @use "blocks/cookie";
+@use "blocks/breadcrumbs";
 @use "blocks/hero-price";
+@use "blocks/makes-cost";
+@use "blocks/how-to";
+@use "blocks/anonymous";
 
 // Компоненты
 @use "components/button";

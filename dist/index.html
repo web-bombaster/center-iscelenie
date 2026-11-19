@@ -131,10 +131,22 @@
     <section class="hero-price">
       <div class="container hero-price__container">
         <div class="hero-price__box">
-          <div class="hero-price__breadcrumbs"></div>
+          <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol class="breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+              <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a>
+                <meta itemprop="position" content="1">
+              </li>
+              <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">О компании</span></a>
+                <meta itemprop="position" content="2">
+              </li>
+              <li class="breadcrumbs__item breadcrumbs__item--current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" aria-current="page"><span itemprop="name">Цены на услуги</span>
+                <meta itemprop="position" content="3">
+              </li>
+            </ol>
+          </nav>
           <div class="hero-price__grid">
             <div class="hero-price__text">
-              <h1 class="hero-price__title">Цены на услуги</h1>
+              <h1 class="hero-price__title h1">Цены на услуги</h1>
               <p class="hero-price__descr">Прайс-лист отражает базовую стоимость медицинских услуг МПЦ «Исцеление» и актуален на 2026 год. Итоговая сумма лечения зависит от тяжести состояния пациента, длительности терапии и необходимых медикаментов. Врач определяет точную смету после очного осмотра и сбора анамнеза, чтобы избежать назначения лишних процедур.</p>
             </div>
             <div class="hero-price__info">
@@ -149,6 +161,82 @@
         </div>
       </div>
     </section>
+    <div class="sections-column">
+      <section class="makes-cost">
+        <div class="container makes-cost__container">
+          <div class="makes-cost__box">
+            <h2 class="makes-cost__title h2">Из чего складывается стоимость</h2>
+            <div class="makes-cost__item"><span class="makes-cost__item-name">Тяжесть состояния</span>
+              <p class="makes-cost__item-descr">Врач оценивает клиническую картину: от легких тревожных расстройств до острых психозов и тяжелых форм зависимости, требующих интенсивной терапии</p>
+            </div>
+            <div class="makes-cost__item"><span class="makes-cost__item-name">Длительность лечения</span>
+              <p class="makes-cost__item-descr">Срок пребывания в клинике напрямую влияет на бюджет – каждый день включает медицинский контроль, уход и процедуры</p>
+            </div>
+            <div class="makes-cost__item"><span class="makes-cost__item-name">Препараты</span>
+              <p class="makes-cost__item-descr">Стоимость зависит от назначений врача: схема может включать базовые средства или дорогостоящие оригинальные медикаменты</p>
+            </div>
+            <div class="makes-cost__item"><span class="makes-cost__item-name">Формат оказания помощи</span>
+              <p class="makes-cost__item-descr">Стационар предполагает круглосуточное наблюдение и проживание, дневной стационар — посещение центра в удобное время, амбулатория — визиты по графику без пребывания в клинике</p>
+            </div>
+            <div class="makes-cost__item"><span class="makes-cost__item-name">Дополнительные процедуры</span>
+              <p class="makes-cost__item-descr">Отдельно оплачиваются сложные аппаратные исследования, транспортировка специализированной бригадой и экстренные вмешательства вне базового протокола</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="how-to">
+        <div class="container how-to__container">
+          <div class="how-to__box">
+            <h2 class="how-to__title h2">Как записаться</h2>
+            <div class="how-to__list">
+              <div class="how-to__item"><span class="how-to__item-num">01</span><span class="how-to__item-name">звонок</span>
+                <p class="how-to__item-descr">Вы оставляете заявку на сайте или звоните в регистратуру. Администратор отвечает на вопросы о ценах и помогает выбрать удобное время для первого визита в центр</p>
+              </div>
+              <div class="how-to__item"><span class="how-to__item-num">02</span><span class="how-to__item-name">консультация врача</span>
+                <p class="how-to__item-descr">Специалист проводит осмотр, изучает историю болезни и оценивает ваше текущее состояние. Доктор объясняет методы воздействия и дает прогноз по срокам восстановления</p>
+              </div>
+              <div class="how-to__item"><span class="how-to__item-num">03</span><span class="how-to__item-name">план лечения</span>
+                <p class="how-to__item-descr">Врач составляет индивидуальную схему терапии и согласовывает бюджет с вами или вашими родственниками. После утверждения программы вы приступаете к процедурам в назначенную дату</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="anonymous">
+        <div class="anonymous-container container"> 
+          <div class="anonymous-box">
+            <div class="anonymous-top">
+              <h2 class="h2 anonymous-top__title">Анонимность</h2>
+              <p class="anonymous-top__descr">Медико-психологический центр «Исцеление» не передает данные пациентов в государственные наркологические диспансеры и правоохранительные органы. Лечение проходит по договору оказания платных медицинских услуг без постановки на учет.</p><a class="anonymous-top__btn btn-arrow" href="#">оплата и документы</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="faq">
+        <div class="faq-container container"> 
+          <div class="faq-box"> 
+            <div class="faq-top">
+              <h2 class="h2 faq-title">Вопрос – ответ</h2>
+              <button class="faq-btn btn-arrow" data-popup="callback">Оставить заявку</button>
+            </div>
+            <ul class="faq-list">
+              <li class="faq-list__item faq-item">
+                <div class="faq-item__title">К кому лучше записаться на первичный прием — к психиатру или психотерапевту?</div>
+                <div class="faq-item__content">Да, мы гарантируем полную конфиденциальность. Мы проводим анонимное лечение алкоголизма без постановки на учет и передачи данных в государственные диспансеры.</div>
+              </li>
+              <li class="faq-list__item faq-item">
+                <div class="faq-item__title">Нужно ли брать больничный лист для посещения дневного стационара?</div>
+                <div class="faq-item__content">Это зависит от вашего самочувствия и графика работы. Пребывание в дневном стационаре обычно занимает несколько часов в день — за это время вы успеваете пройти все назначенные медицинские процедуры и сеансы психотерапии. График посещений составляется индивидуально, поэтому многие пациенты комфортно совмещают терапию с работой или учебой. Если же вам требуется перерыв для полноценного восстановления, мы можем оформить официальный больничный лист. При этом мы строго соблюдаем анонимность: в документе не будет указан специфический диагноз, раскрывающий профиль клиники.</div>
+              </li>
+              <li class="faq-list__item faq-item">
+                <div class="faq-item__title">Как подготовиться к первой консультации в вашем центре?</div>
+                <div class="faq-item__content">Это зависит от вашего самочувствия и графика работы. Пребывание в дневном стационаре обычно занимает несколько часов в день — за это время вы успеваете пройти все назначенные медицинские процедуры и сеансы психотерапии. График посещений составляется индивидуально, поэтому многие пациенты комфортно совмещают терапию с работой или учебой. Если же вам требуется перерыв для полноценного восстановления, мы можем оформить официальный больничный лист. При этом мы строго соблюдаем анонимность: в документе не будет указан специфический диагноз, раскрывающий профиль клиники.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer class="footer">
       <div class="footer-container container">
         <div class="footer-grid">
