@@ -148,7 +148,23 @@ header.header
 					li.header-nav__item
 						a.header-nav__link(href="#") Контакты
 
-			button.header-bottom__search
-				svg.header-bottom__search-icon(aria-label="Поиск") 
+			button.header-bottom__search(type="button" aria-label="Открыть поиск" aria-expanded="false" aria-controls="header-search")
+				svg.header-bottom__search-icon(aria-hidden="true")
 					use(href="assets/icons/symbol/sprite.svg#search")
 			button.header-bottom__feedback.btn(data-popup="callback") Заказать звонок
+			form.header-search.header-bottom__search-form#header-search(action="/search/" method="get")
+				.header-search__field
+					input.header-search__input(type="search" name="q" placeholder="Услуга, направление, врач..." autocomplete="off" aria-label="Поиск по сайту")
+					button.header-search__submit(type="submit" aria-label="Найти")
+						svg.header-search__icon(aria-hidden="true")
+							use(href="assets/icons/symbol/sprite.svg#search")
+				ul.header-search__list
+					li.header-search__item
+						a.header-search__link(href="#") тревожные расстройства
+					li.header-search__item
+						a.header-search__link(href="#") психотические расстройства
+					li.header-search__item
+						a.header-search__link(href="#") расстройства пищевого поведения
+			button.header-search__close(type="button" aria-label="Закрыть поиск")
+				svg.header-search__close-icon(aria-hidden="true")
+					use(href="assets/icons/symbol/sprite.svg#close")

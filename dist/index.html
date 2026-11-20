@@ -119,246 +119,76 @@
               <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
             </ul>
           </nav>
-          <button class="header-bottom__search">
-            <svg class="header-bottom__search-icon" aria-label="Поиск"> 
+          <button class="header-bottom__search" type="button" aria-label="Открыть поиск" aria-expanded="false" aria-controls="header-search">
+            <svg class="header-bottom__search-icon" aria-hidden="true">
               <use href="assets/icons/symbol/sprite.svg#search"></use>
             </svg>
           </button>
           <button class="header-bottom__feedback btn" data-popup="callback">Заказать звонок</button>
+          <form class="header-search header-bottom__search-form" id="header-search" action="/search/" method="get">
+            <div class="header-search__field">
+              <input class="header-search__input" type="search" name="q" placeholder="Услуга, направление, врач..." autocomplete="off" aria-label="Поиск по сайту">
+              <button class="header-search__submit" type="submit" aria-label="Найти">
+                <svg class="header-search__icon" aria-hidden="true">
+                  <use href="assets/icons/symbol/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </div>
+            <ul class="header-search__list">
+              <li class="header-search__item"><a class="header-search__link" href="#">тревожные расстройства</a></li>
+              <li class="header-search__item"><a class="header-search__link" href="#">психотические расстройства</a></li>
+              <li class="header-search__item"><a class="header-search__link" href="#">расстройства пищевого поведения</a></li>
+            </ul>
+          </form>
+          <button class="header-search__close" type="button" aria-label="Закрыть поиск">
+            <svg class="header-search__close-icon" aria-hidden="true">
+              <use href="assets/icons/symbol/sprite.svg#close"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
-    <section class="hero-price">
-      <div class="container hero-price__container">
-        <div class="hero-price__box">
-          <nav class="breadcrumbs" aria-label="Хлебные крошки">
-            <ol class="breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
-              <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span></a>
-                <meta itemprop="position" content="1">
-              </li>
-              <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">О компании</span></a>
-                <meta itemprop="position" content="2">
-              </li>
-              <li class="breadcrumbs__item breadcrumbs__item--current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" aria-current="page"><span itemprop="name">Цены на услуги</span>
-                <meta itemprop="position" content="3">
-              </li>
-            </ol>
-          </nav>
-          <div class="hero-price__grid">
-            <div class="hero-price__text">
-              <h1 class="hero-price__title h1">Цены на услуги</h1>
-              <p class="hero-price__descr">Прайс-лист отражает базовую стоимость медицинских услуг МПЦ «Исцеление» и актуален на 2026 год. Итоговая сумма лечения зависит от тяжести состояния пациента, длительности терапии и необходимых медикаментов. Врач определяет точную смету после очного осмотра и сбора анамнеза, чтобы избежать назначения лишних процедур.</p>
-            </div>
-            <div class="hero-price__info">
-              <div class="hero-price__includes">В указанную цену входит:</div>
-              <ul class="hero-price__list h-price">
-                <li class="h-price__item">Составление индивидуального плана восстановления</li>
-                <li class="h-price__item">Прием специалиста</li>
-                <li class="h-price__item">Диагностика</li>
-              </ul>
-            </div>
-          </div>
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-box">
+          <div class="hero-tags"><span class="hero-tag">Круглосуточно</span><span class="hero-tag">Лицензия</span><span class="hero-tag">Анонимность</span><span class="hero-tag">Стационар</span></div>
+          <h1 class="h1 hero-title">Помощь при психических расстройствах и зависимости в Ростове-на-Дону</h1>
+          <div class="hero-descr">Медико-психологический центр (МПЦ) «Исцеление» — это безопасное пространство, где каждый пациент получает квалифицированную медицинскую и психотерапевтическую поддержку. Помощь опытных психиатров, психотерапевтов и наркологов в комфортных условиях современного стационара. Мы возвращаем радость к жизни.</div>
+          <button class="hero-btn btn-arrow" data-popup="callback">Получить консультацию</button>
         </div>
       </div>
     </section>
-    <div class="sections-column">
-      <section class="price-tabs">
-        <div class="price-tabs__container container">
-          <div class="price-tabs__nav" role="tablist" aria-label="Категории услуг">
-            <button class="price-tabs__btn is-active" type="button" role="tab" id="price-tab-consultations" aria-controls="price-panel-consultations" aria-selected="true" data-tab="consultations"><span class="price-tabs__btn-text">Консультации</span><span class="price-tabs__chevron">
-                <svg class="price-tabs__chevron-icon" aria-hidden="true">
-                  <use href="assets/icons/symbol/sprite.svg#chevron-down"></use>
-                </svg></span></button>
-            <button class="price-tabs__btn" type="button" role="tab" id="price-tab-therapy" aria-controls="price-panel-therapy" aria-selected="false" tabindex="-1" data-tab="therapy"><span class="price-tabs__btn-text">Лечение зависимостей</span><span class="price-tabs__chevron">
-                <svg class="price-tabs__chevron-icon" aria-hidden="true">
-                  <use href="assets/icons/symbol/sprite.svg#chevron-down"></use>
-                </svg></span></button>
-            <button class="price-tabs__btn" type="button" role="tab" id="price-tab-day" aria-controls="price-panel-day" aria-selected="false" tabindex="-1" data-tab="day"><span class="price-tabs__btn-text">Дневной стационар</span><span class="price-tabs__chevron">
-                <svg class="price-tabs__chevron-icon" aria-hidden="true">
-                  <use href="assets/icons/symbol/sprite.svg#chevron-down"></use>
-                </svg></span></button>
-            <button class="price-tabs__btn" type="button" role="tab" id="price-tab-diagnostics" aria-controls="price-panel-diagnostics" aria-selected="false" tabindex="-1" data-tab="diagnostics"><span class="price-tabs__btn-text">Диагностика</span><span class="price-tabs__chevron">
-                <svg class="price-tabs__chevron-icon" aria-hidden="true">
-                  <use href="assets/icons/symbol/sprite.svg#chevron-down"></use>
-                </svg></span></button>
+    <div class="advantages">
+      <div class="advantages-container container">
+        <div class="advantages-list">
+          <div class="advantages-item"><span class="advantages-item__icon"></span><span class="advantages-item__title">Полная анонимность</span>
+            <p class="advantages-item__descr">Мы гарантируем конфиденциальность каждому обратившемуся пациенту</p>
           </div>
-          <div class="price-tabs__panel is-active" id="price-panel-consultations" role="tabpanel" aria-labelledby="price-tab-consultations" data-tab-panel="consultations">
-            <h2 class="price-tabs__title h2">Цены на консультации психиатра, нарколога, психотерапевта</h2>
-            <div class="price-tabs__list">
-              <div class="price-tabs__row">
-                <div class="price-tabs__name"><span class="price-tabs__mark"></span><span class="price-tabs__name-text">Первичная консультация главного врача, врача-психиатра, нарколога, психотерапевта Зубко М.М.</span></div>
-                <div class="price-tabs__meta"><span class="price-tabs__duration">до 60 минут</span><span class="price-tabs__price">6 000 ₽</span></div>
-                <div class="price-tabs__order-cell">
-                  <button class="price-tabs__order" type="button" data-popup="callback">записаться</button>
-                </div>
-              </div>
-              <div class="price-tabs__row">
-                <div class="price-tabs__name"><span class="price-tabs__mark"></span><span class="price-tabs__name-text">Повторная консультация главного врача, врача-психиатра, нарколога, психотерапевта Зубко М.М.</span></div>
-                <div class="price-tabs__meta"><span class="price-tabs__duration">до 30 минут</span><span class="price-tabs__price">4 000 ₽</span></div>
-                <div class="price-tabs__order-cell">
-                  <button class="price-tabs__order" type="button" data-popup="callback">записаться</button>
-                </div>
-              </div>
-              <div class="price-tabs__row">
-                <div class="price-tabs__name"><span class="price-tabs__mark"></span><span class="price-tabs__name-text">Консультация дежурного врача</span></div>
-                <div class="price-tabs__meta"><span class="price-tabs__duration">до 50 минут</span><span class="price-tabs__price">4 000 ₽</span></div>
-                <div class="price-tabs__order-cell">
-                  <button class="price-tabs__order" type="button" data-popup="callback">записаться</button>
-                </div>
-              </div>
-            </div>
+          <div class="advantages-item"><span class="advantages-item__icon"></span><span class="advantages-item__title">Индивидуальный подход</span>
+            <p class="advantages-item__descr">Схема терапии определяется только после глубокого изучения анамнеза</p>
           </div>
-          <div class="price-tabs__panel" id="price-panel-therapy" role="tabpanel" aria-labelledby="price-tab-therapy" aria-hidden="true" data-tab-panel="therapy">
-            <h2 class="price-tabs__title h2">Стоимость лечения алкоголизма и вывода из запоя</h2>
-            <div class="price-tabs__list">
-              <div class="price-tabs__row price-tabs__row--therapy">
-                <div class="price-tabs__name"><span class="price-tabs__mark"></span><span class="price-tabs__name-text">Снятие алкогольной интоксикации</span></div>
-                <p class="price-tabs__descr">Инфузионная терапия длительностью 12 часов для стабилизации состояния</p><span class="price-tabs__price">9 000 ₽</span>
-                <div class="price-tabs__order-cell">
-                  <button class="price-tabs__order" type="button" data-popup="callback">записаться</button>
-                </div>
-              </div>
-              <div class="price-tabs__row price-tabs__row--therapy">
-                <div class="price-tabs__name"><span class="price-tabs__mark"></span><span class="price-tabs__name-text">Прерывание запоя</span></div>
-                <p class="price-tabs__descr">Комплексное купирование абстиненции в условиях стационара (1 сутки)</p><span class="price-tabs__price">13 000 ₽</span>
-                <div class="price-tabs__order-cell">
-                  <button class="price-tabs__order" type="button" data-popup="callback">записаться</button>
-                </div>
-              </div>
-              <div class="price-tabs__row price-tabs__row--therapy">
-                <div class="price-tabs__name"><span class="price-tabs__mark"></span><span class="price-tabs__name-text">Курс лечения последствий употребления ПАВ</span></div>
-                <p class="price-tabs__descr">Базовая программа реабилитации и медикаментозной поддержки (6 суток)</p><span class="price-tabs__price">70 000 ₽</span>
-                <div class="price-tabs__order-cell">
-                  <button class="price-tabs__order" type="button" data-popup="callback">записаться</button>
-                </div>
-              </div>
-              <div class="price-tabs__row price-tabs__row--therapy">
-                <div class="price-tabs__name"><span class="price-tabs__mark"></span><span class="price-tabs__name-text">Расширенный курс терапии</span></div>
-                <p class="price-tabs__descr">Углубленная программа восстановления с психотерапией (9 суток)</p><span class="price-tabs__price">120 000 ₽</span>
-                <div class="price-tabs__order-cell">
-                  <button class="price-tabs__order" type="button" data-popup="callback">записаться</button>
-                </div>
-              </div>
-            </div>
+          <div class="advantages-item"><span class="advantages-item__icon"></span><span class="advantages-item__title">Опытные врачи</span>
+            <p class="advantages-item__descr">Наши специалисты имеют стаж работы более 15 лет в области психиатрии и наркологии</p>
           </div>
-          <div class="price-tabs__panel" id="price-panel-day" role="tabpanel" aria-labelledby="price-tab-day" aria-hidden="true" data-tab-panel="day">
-            <h2 class="price-tabs__title h2">Стоимость лечения в дневном стационаре</h2>
-            <div class="price-tabs__list">
-              <div class="price-tabs__row price-tabs__row--day">
-                <div class="price-tabs__name"><span class="price-tabs__mark"></span><span class="price-tabs__name-text">Лечение душевных расстройств в условиях дневного стационара</span></div>
-                <div class="price-tabs__options">
-                  <div class="price-tabs__option"><span class="price-tabs__duration">10 дней</span><span class="price-tabs__price">70 000 ₽</span></div>
-                  <div class="price-tabs__option"><span class="price-tabs__duration">15 дней</span><span class="price-tabs__price">90 000 ₽</span></div>
-                  <div class="price-tabs__option"><span class="price-tabs__duration">30 дней</span><span class="price-tabs__price">120 000 ₽</span></div>
-                </div>
-                <div class="price-tabs__order-cell">
-                  <button class="price-tabs__order" type="button" data-popup="callback">записаться</button>
-                </div>
-              </div>
-            </div>
+          <div class="advantages-item"><span class="advantages-item__icon"></span><span class="advantages-item__title">Семинары и открытые дни</span>
+            <p class="advantages-item__descr">Регулярно проводим мини-лекции и разъяснительные беседы</p>
           </div>
-          <div class="price-tabs__panel" id="price-panel-diagnostics" role="tabpanel" aria-labelledby="price-tab-diagnostics" aria-hidden="true" data-tab-panel="diagnostics">
-            <h2 class="price-tabs__title h2">Цены на консультации психиатра, нарколога, психотерапевта</h2>
-            <div class="price-tabs__list">
-              <div class="price-tabs__row">
-                <div class="price-tabs__name"><span class="price-tabs__mark"></span><span class="price-tabs__name-text">Экспериментально-психологическое исследование</span></div>
-                <div class="price-tabs__meta"><span class="price-tabs__duration">до 240 минут</span><span class="price-tabs__price">10 000 ₽</span></div>
-                <div class="price-tabs__order-cell">
-                  <button class="price-tabs__order" type="button" data-popup="callback">записаться</button>
-                </div>
-              </div>
-            </div>
+          <div class="advantages-item"><span class="advantages-item__icon"></span><span class="advantages-item__title">Лояльная ценовая политика</span>
+            <p class="advantages-item__descr">Гибкий подход к оплате лечения, потому что наша цель — помочь пациенту</p>
           </div>
-        </div>
-      </section>
-      <section class="makes-cost">
-        <div class="container makes-cost__container">
-          <div class="makes-cost__box">
-            <h2 class="makes-cost__title h2">Из чего складывается стоимость</h2>
-            <div class="makes-cost__item"><span class="makes-cost__item-name">Тяжесть состояния</span>
-              <p class="makes-cost__item-descr">Врач оценивает клиническую картину: от легких тревожных расстройств до острых психозов и тяжелых форм зависимости, требующих интенсивной терапии</p>
-            </div>
-            <div class="makes-cost__item"><span class="makes-cost__item-name">Длительность лечения</span>
-              <p class="makes-cost__item-descr">Срок пребывания в клинике напрямую влияет на бюджет – каждый день включает медицинский контроль, уход и процедуры</p>
-            </div>
-            <div class="makes-cost__item"><span class="makes-cost__item-name">Препараты</span>
-              <p class="makes-cost__item-descr">Стоимость зависит от назначений врача: схема может включать базовые средства или дорогостоящие оригинальные медикаменты</p>
-            </div>
-            <div class="makes-cost__item"><span class="makes-cost__item-name">Формат оказания помощи</span>
-              <p class="makes-cost__item-descr">Стационар предполагает круглосуточное наблюдение и проживание, дневной стационар — посещение центра в удобное время, амбулатория — визиты по графику без пребывания в клинике</p>
-            </div>
-            <div class="makes-cost__item"><span class="makes-cost__item-name">Дополнительные процедуры</span>
-              <p class="makes-cost__item-descr">Отдельно оплачиваются сложные аппаратные исследования, транспортировка специализированной бригадой и экстренные вмешательства вне базового протокола</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="how-to">
-        <div class="container how-to__container">
-          <div class="how-to__box">
-            <h2 class="how-to__title h2">Как записаться</h2>
-            <div class="how-to__list">
-              <div class="how-to__item"><span class="how-to__item-num">01</span><span class="how-to__item-name">звонок</span>
-                <p class="how-to__item-descr">Вы оставляете заявку на сайте или звоните в регистратуру. Администратор отвечает на вопросы о ценах и помогает выбрать удобное время для первого визита в центр</p>
-              </div>
-              <div class="how-to__item"><span class="how-to__item-num">02</span><span class="how-to__item-name">консультация врача</span>
-                <p class="how-to__item-descr">Специалист проводит осмотр, изучает историю болезни и оценивает ваше текущее состояние. Доктор объясняет методы воздействия и дает прогноз по срокам восстановления</p>
-              </div>
-              <div class="how-to__item"><span class="how-to__item-num">03</span><span class="how-to__item-name">план лечения</span>
-                <p class="how-to__item-descr">Врач составляет индивидуальную схему терапии и согласовывает бюджет с вами или вашими родственниками. После утверждения программы вы приступаете к процедурам в назначенную дату</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="anonymous">
-        <div class="anonymous-container container"> 
-          <div class="anonymous-box">
-            <div class="anonymous-top">
-              <h2 class="h2 anonymous-top__title">Анонимность</h2>
-              <p class="anonymous-top__descr">Медико-психологический центр «Исцеление» не передает данные пациентов в государственные наркологические диспансеры и правоохранительные органы. Лечение проходит по договору оказания платных медицинских услуг без постановки на учет.</p><a class="anonymous-top__btn btn-arrow" href="#">оплата и документы</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="faq">
-        <div class="faq-container container">
-          <div class="faq-box">
-            <div class="faq-top">
-              <h2 class="h2 faq-title">Вопрос – ответ</h2>
-              <button class="faq-btn btn-arrow" data-popup="callback">Оставить заявку</button>
-            </div>
-            <ul class="faq-list">
-              <li class="faq-list__item faq-item">
-                <div class="faq-item__title">Входит ли стоимость лекарств в цену курса?</div>
-                <div class="faq-item__content">Стоимость лекарственных препаратов рассчитывается отдельно от курса терапии: она зависит от назначенной схемы и подобранных врачом медикаментов. Точную сумму специалист озвучит после консультации.</div>
-              </li>
-              <li class="faq-list__item faq-item">
-                <div class="faq-item__title">Можно ли пройти лечение полностью анонимно?</div>
-                <div class="faq-item__content">Да, мы гарантируем полную конфиденциальность. Мы проводим анонимное лечение алкоголизма без постановки на учет и передачи данных в государственные диспансеры.</div>
-              </li>
-              <li class="faq-list__item faq-item">
-                <div class="faq-item__title">Сколько стоит экстренная помощь при запое?</div>
-                <div class="faq-item__content">Стоимость экстренной помощи при запое зависит от состояния пациента и объема необходимых процедур. Уточнить цену и вызвать специалиста можно по телефону или через заявку на сайте.</div>
-              </li>
-              <li class="faq-list__item faq-item">
-                <div class="faq-item__title">Как узнать стоимость приема специалиста?</div>
-                <div class="faq-item__content">Актуальные цены на прием специалистов указаны в прайсе на сайте. Если нужного специалиста нет в списке, стоимость можно уточнить по телефону или в заявке на сайте.</div>
-              </li>
-              <li class="faq-list__item faq-item">
-                <div class="faq-item__title">Есть ли помощь для детей и подростков?</div>
-                <div class="faq-item__content">Да, в нашем центре помощь оказывают детям и подросткам. Формат работы и стоимость зависят от возраста и запроса — подробности уточняйте по телефону или в заявке на сайте.</div>
-              </li>
-            </ul>
+          <div class="advantages-item"><span class="advantages-item__icon"></span><span class="advantages-item__title">Психотерапевтические группы</span>
+            <p class="advantages-item__descr">Группы для нормализации и восстановления отношений</p>
           </div>
         </div>
       </div>
+    </div>
+    <div class="sections-column">
       <section class="qa">
         <div class="qa-container container">
           <div class="qa-box">
             <div class="qa-text">
-              <h2 class="h1">Оставьте контакты для связи со специалистом центра</h2>
-              <p class="qa-descr">Администратор перезвонит в течение 15 минут, ответит на вопросы по ценам и поможет выбрать удобное время приема</p>
+              <h2 class="h1">Сделайте первый шаг к&nbsp;здоровой жизни уже сегодня!</h2>
+              <p class="qa-descr">Оставьте свои контактные данные. Наш специалист перезвонит вам в ближайшее время, ответит на все вопросы и поможет подобрать удобное время для визита в центр</p>
             </div>
             <form class="qa-form callback-form" action="/callback/" method="post">
               <input class="callback-form__input" type="text" name="name" placeholder="Имя *" autocomplete="name" required>
@@ -368,37 +198,220 @@
                   <input class="callback-form__checkbox-input visually-hidden" type="checkbox" name="agreement" required><span class="checkbox__box" aria-hidden="true"></span><span class="callback-form__checkbox-text"><a href="/privacy/" target="_blank">Согласие на обработку персональных данных</a></span>
                 </label>
               </div>
-              <button class="callback-form__submit btn" type="submit">Отправить</button>
+              <button class="callback-form__submit btn" type="submit">Заказать звонок</button>
             </form>
           </div>
         </div>
       </section>
-      <section class="other-services">
-        <div class="other-services__container container">
-          <div class="other-services__box">
-            <h2 class="other-services__title h2">Другие услуги</h2>
-            <div class="other-services__list"><a class="other-services__item" href="#"><span class="other-services__item-name">Лечение алкоголизма</span><span class="other-services__arrow">
-                  <svg class="other-services__arrow-icon" aria-hidden="true">
-                    <use href="assets/icons/symbol/sprite.svg#arrow-up-right"></use>
-                  </svg></span></a><a class="other-services__item" href="#"><span class="other-services__item-name">Вывод из запоя</span><span class="other-services__arrow">
-                  <svg class="other-services__arrow-icon" aria-hidden="true">
-                    <use href="assets/icons/symbol/sprite.svg#arrow-up-right"></use>
-                  </svg></span></a><a class="other-services__item" href="#"><span class="other-services__item-name">Консультации специалистов</span><span class="other-services__arrow">
-                  <svg class="other-services__arrow-icon" aria-hidden="true">
-                    <use href="assets/icons/symbol/sprite.svg#arrow-up-right"></use>
-                  </svg></span></a><a class="other-services__item" href="#"><span class="other-services__item-name">Дневной стационар</span><span class="other-services__arrow">
-                  <svg class="other-services__arrow-icon" aria-hidden="true">
-                    <use href="assets/icons/symbol/sprite.svg#arrow-up-right"></use>
-                  </svg></span></a></div>
+      <section class="work-areas">
+        <div class="work-areas__container container">
+          <div class="work-areas__grid">
+            <div class="work-areas__top">
+              <h2 class="h2 work-areas__title">Основные направления нашей работы</h2>
+              <p class="work-areas__descr">Наш центр медико-психологической помощи специализируется на комплексной терапии душевных расстройств и зависимостей у взрослых и подростков</p>
+            </div><a class="work-areas__item wa-item" href="#"> <span class="wa-item__title">Психиатрия для взрослых</span>
+              <p class="wa-item__descr">Диагностика и терапия неврозов, депрессий, биполярного аффективного расстройства (БАР), шизофрении и других душевных расстройств. Тактичный подход и полная конфиденциальность</p><span class="wa-item__price">от 3 000 ₽</span></a><a class="work-areas__item wa-item" href="#"> <span class="wa-item__title">Подростковая психиатрия и психология</span>
+              <p class="wa-item__descr">Бережная работа с подростками. Помощь при аутизме, расстройствах пищевого поведения (РПП), подростковых депрессиях, тревожных расстройствах, страхах и ОКР</p><span class="wa-item__price">от 3 000 ₽</span></a><a class="work-areas__item wa-item" href="#"> <span class="wa-item__title">Психотерапевтическая помощь</span>
+              <p class="wa-item__descr">Индивидуальная и семейная психотерапия (в том числе когнитивно-поведенческая). Работа с паническими атаками, стрессом и кризисными состояниями. Помогаем найти внутренние ресурсы и восстановить отношения в семье</p><span class="wa-item__price">от 3 000 ₽</span></a><a class="work-areas__item wa-item" href="#"> <span class="wa-item__title">Помощь при зависимостях (наркология)</span>
+              <p class="wa-item__descr">Квалифицированная наркологическая помощь в клинике. Устранение наркотического абстинентного состояния, снятие ломки, детоксикация и вывод из запоя (капельница в стационаре)</p><span class="wa-item__price">от 8 000 ₽</span></a><a class="work-areas__item wa-item" href="#"> <span class="wa-item__title">Терапия пациентов с двойным диагнозом</span>
+              <p class="wa-item__descr">Специализированная помощь пациентам, у которых зависимость отягощена сопутствующим психическим расстройством. Комплексное восстановление под контролем врачей разных профилей</p><span class="wa-item__price">от 10 000 ₽</span></a>
           </div>
         </div>
       </section>
-    </div>
-    <section class="disclaimer">
-      <div class="disclaimer__container container">
-        <p class="disclaimer__text">Информация на странице носит справочный характер и не является публичной офертой. Окончательная стоимость услуг определяется индивидуально на основании договора</p>
+      <section class="staff">
+        <div class="staff-container container">
+          <div class="staff-box">
+            <div class="staff-top">
+              <h2 class="h2 staff-title">Врачи медико-психологического центра «Исцеление»</h2>
+              <p class="staff-descr">Гордость нашей клиники — это команда высококвалифицированных дипломированных специалистов. Психиатры, клинические психологи и наркологи работают сообща, чтобы обеспечить всестороннюю помощь каждому пациенту</p>
+            </div>
+            <div class="staff-slider swiper">
+              <div class="staff-slider__wrapper swiper-wrapper"><a class="staff-slider__item staff-item swiper-slide" href="#">
+                  <div class="staff-item__img-box"><img class="staff-item__img" src="assets/images/staff-01.jpg" alt=""><span class="staff-item__experience">Стаж 22 года</span></div><span class="staff-item__name"> <span>Зубко </span>Михаил Михайлович</span><span class="staff-item__descr">Главный Врач, врач-психиатр, нарколог, психотерапевт, клинический психолог</span></a><a class="staff-slider__item staff-item swiper-slide" href="#">
+                  <div class="staff-item__img-box"><img class="staff-item__img" src="assets/images/staff-02.jpg" alt=""><span class="staff-item__experience">Стаж 7 лет</span></div><span class="staff-item__name"> <span>Сапронова </span>Ирина Александровна</span><span class="staff-item__descr">Магистр психологии, психотерапевт по методу КИТ,  супружеский и семейный психолог</span></a><a class="staff-slider__item staff-item swiper-slide" href="#">
+                  <div class="staff-item__img-box"><img class="staff-item__img" src="assets/images/staff-03.jpg" alt=""><span class="staff-item__experience">Стаж 9 лет</span></div><span class="staff-item__name"> <span>Степаньянц </span>Анастасия Сергеевна</span><span class="staff-item__descr">Врач-психиатр</span></a><a class="staff-slider__item staff-item swiper-slide" href="#">
+                  <div class="staff-item__img-box"><img class="staff-item__img" src="assets/images/staff-06.jpg" alt=""><span class="staff-item__experience">Стаж 14 лет</span></div><span class="staff-item__name"> <span>Мрыхина </span>Вероника Владимировна</span><span class="staff-item__descr">Врач-психиатр, психотерапевт</span></a><a class="staff-slider__item staff-item swiper-slide" href="#">
+                  <div class="staff-item__img-box"><img class="staff-item__img" src="assets/images/staff-07.jpg" alt=""><span class="staff-item__experience">Стаж 4 года</span></div><span class="staff-item__name"> <span>Лобанова </span>Екатерина Сергеевна</span><span class="staff-item__descr">Врач-психиатр</span></a><a class="staff-slider__item staff-item swiper-slide" href="#">
+                  <div class="staff-item__img-box"><img class="staff-item__img" src="assets/images/staff-08.jpg" alt=""><span class="staff-item__experience">Стаж 18 лет</span></div><span class="staff-item__name"> <span>Цапкина </span>Анна Вячеславовна</span><span class="staff-item__descr">Клинический психолог, экзистенциальный, когнитивно-поведенческий, системный семейный психотерапевт</span></a><a class="staff-slider__item staff-item swiper-slide" href="#">
+                  <div class="staff-item__img-box"><img class="staff-item__img" src="assets/images/staff-05.jpg" alt=""><span class="staff-item__experience">Стаж 27 лет</span></div><span class="staff-item__name"> <span>Шопина </span>Елена Геннадьевна</span><span class="staff-item__descr">Врач-психиатор детский</span></a><a class="staff-slider__item staff-item swiper-slide" href="#">
+                  <div class="staff-item__img-box"><img class="staff-item__img" src="assets/images/staff-04.jpg" alt=""><span class="staff-item__experience"></span></div><span class="staff-item__name"> <span>Зверяк </span>Екатерина Андреевна</span><span class="staff-item__descr">Администратор</span></a></div>
+              <div class="staff-bottom"><a class="staff-link" href="#">Подробнее</a>
+                <div class="staff-slider__nav slider-nav">
+                  <div class="staff-slider__nav-box slider-nav__box">
+                    <div class="staff-slider__prev slider-nav__prev"></div>
+                    <div class="staff-slider__next slider-nav__next"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="programs">
+        <div class="programs-container container"> 
+          <div class="programs-box">
+            <div class="programs-top">
+              <h2 class="h2 programs-top__title">Программы пребывания в стационаре</h2>
+              <p class="programs-top__descr">Для достижения максимального результата мы рекомендуем прохождение комплексных программ в условиях нашего стационара (дневного или круглосуточного). Это позволяет обеспечить непрерывный контроль, своевременную корректировку процедур и интенсивную работу с психотерапевтом в комфортной обстановке</p><a class="programs-top__btn btn-arrow" href="#">Подробнее</a>
+            </div>
+            <div class="programs-grid">
+              <div class="programs-row">
+                <p class="programs-row__title">Консультация главного врача, врача-психиатра, нарколога, психотерапевта Зубко М.М.</p><span class="programs-row__time">до 60 минут</span><span class="programs-row__price">6 000 ₽</span>
+              </div>
+              <div class="programs-row">
+                <p class="programs-row__title">Повторная консультация главного врача, врача-психиатра, нарколога, психотерапевта Зубко М.М.</p><span class="programs-row__time">до 30 минут</span><span class="programs-row__price">4 000 ₽</span>
+              </div>
+              <div class="programs-row">
+                <p class="programs-row__title">Консультация дежурного врача</p><span class="programs-row__time">до 50 минут</span><span class="programs-row__price">4 000 ₽</span>
+              </div>
+              <div class="programs-row">
+                <p class="programs-row__title">Снятие алкогольной интоксикации</p><span class="programs-row__time">12 часов пребывания</span><span class="programs-row__price">9 000 ₽</span>
+              </div>
+              <div class="programs-row">
+                <p class="programs-row__title">Прерывание запоя</p><span class="programs-row__time">1 сутки пребывания</span><span class="programs-row__price">13 000 ₽</span>
+              </div>
+              <div class="programs-row">
+                <p class="programs-row__title">Снятие алкогольной интоксикации</p><span class="programs-row__time">12 часов пребывания</span><span class="programs-row__price">9 000 ₽</span>
+              </div>
+              <div class="programs-row">
+                <p class="programs-row__title">Прерывание запоя</p><span class="programs-row__time">1 сутки пребывания</span><span class="programs-row__price">13 000 ₽</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+      <section class="steps">
+        <div class="steps-container container">
+          <div class="steps-box">
+            <div class="steps-top">
+              <h2 class="h2 steps-title"> <span>5 шагов </span>к свободной и здоровой жизни</h2>
+              <p class="steps-descr">Мы понимаем, что обращаться за помощью бывает непросто. Наша задача — сделать этот процесс максимально прозрачным и безопасным</p>
+            </div>
+            <div class="steps-slider swiper">
+              <div class="steps-slider__wrapper swiper-wrapper">
+                <div class="steps-slider__item steps-item swiper-slide">
+                  <div class="steps-item__top"><span class="steps-item__digit">01</span><span class="steps-item__name">Мотивация и обращение</span></div><span class="steps-item__descr">Вы оставляете заявку на сайте или звоните нам. Наши специалисты готовы проконсультировать родственников и подсказать, как убедить близкого человека начать лечение</span>
+                </div>
+                <div class="steps-slider__item steps-item swiper-slide">
+                  <div class="steps-item__top"><span class="steps-item__digit">02</span><span class="steps-item__name">Диагностика в центре</span></div><span class="steps-item__descr">Врач осматривает пациента в клинике, собирает анамнез и оценивает общее физическое и психологическое состояние</span>
+                </div>
+                <div class="steps-slider__item steps-item swiper-slide">
+                  <div class="steps-item__top"><span class="steps-item__digit">03</span><span class="steps-item__name">Детоксикация и купирование острых состояний</span></div><span class="steps-item__descr">Проведение необходимых медицинских процедур в стационаре (вывод токсинов, капельницы, снятие абстинентного синдрома или панической атаки)</span>
+                </div>
+                <div class="steps-slider__item steps-item swiper-slide">
+                  <div class="steps-item__top"><span class="steps-item__digit">04</span><span class="steps-item__name">Восстановление и терапия</span></div><span class="steps-item__descr">Индивидуальная схема терапии, включающая в себя медикаментозное лечение и активную психолого-психотерапевтическую помощь для устранения последствий заболевания</span>
+                </div>
+                <div class="steps-slider__item steps-item swiper-slide">
+                  <div class="steps-item__top"><span class="steps-item__digit">05</span><span class="steps-item__name">Ресоциализация и поддержка</span></div><span class="steps-item__descr">Работа с психологом для возвращения к полноценной жизни и восстановления отношений с близкими людьми (в том числе бесплатные группы поддержки для родственников)</span>
+                </div>
+              </div>
+              <div class="steps-slider__nav slider-nav">
+                <div class="steps-slider__nav-box slider-nav__box">
+                  <div class="steps-slider__prev slider-nav__prev"></div>
+                  <div class="steps-slider__next slider-nav__next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="guarantees">
+        <div class="guarantees-container container"> 
+          <div class="guarantees-box"> 
+            <div class="guarantees-info">
+              <h2 class="h2 guarantees-info__title">Гарантия качества и законности</h2>
+              <p class="guarantees-info__descr">Медико-психологический центр «Исцеление» осуществляет свою деятельность на основании официальных медицинских лицензий. Мы строго соблюдаем все стандарты оказания психиатрической и наркологической помощи</p><a class="guarantees-info__btn btn-arrow" href="#">Ознакомиться с документами</a>
+            </div>
+            <div class="guarantees-slider-box">
+              <div class="guarantees-slider swiper">
+                <div class="guarantees-slider__wrapper swiper-wrapper">
+                  <div class="guarantees-slider__item swiper-slide"><a class="guarantees-slider__link" href="assets/images/guarantees-01.jpg" data-fslightbox="guarantees"> <img class="guarantees-slider__img" src="assets/images/guarantees-01.jpg" alt=""></a></div>
+                  <div class="guarantees-slider__item swiper-slide"><a class="guarantees-slider__link" href="assets/images/guarantees-02.jpg" data-fslightbox="guarantees"> <img class="guarantees-slider__img" src="assets/images/guarantees-02.jpg" alt=""></a></div>
+                  <div class="guarantees-slider__item swiper-slide"><a class="guarantees-slider__link" href="assets/images/guarantees-03.jpg" data-fslightbox="guarantees"> <img class="guarantees-slider__img" src="assets/images/guarantees-03.jpg" alt=""></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-content">
+        <div class="page-content__container container">
+          <div class="page-content__box">
+            <h1 class="h2 page-content__title">Медико-психологический центр «Исцеление» в Ростове-на-Дону: комплексная профессиональная помощь</h1>
+            <p>Современный ритм жизни, стрессы и кризисы часто приводят к проблемам, справиться с которыми самостоятельно невозможно. В таких ситуациях крайне важно вовремя обратиться к специалистам.</p>
+            <p>МПЦ «Исцеление» — ведущий центр медико-психологической помощи в регионе. Наша клиника психиатрии и наркологии предоставляет полный спектр услуг по диагностике и поддержке пациентов с различными расстройствами. Мы объединили передовые методики, чтобы наш медико-психологический центр стал безопасным местом, где каждый человек находит эффективное решение своих проблем.</p>
+            <h2 class="h3">Бережная терапия психических расстройств</h2>
+            <p>Основной акцент нашей работы сделан на глубокую психотерапию и лечение душевных недугов. Если вам нужна надежная психиатрическая клиника в Ростове-на-Дону, МПЦ «Исцеление» готов предложить квалифицированные услуги.</p>
+            <p>Работаем с депрессиями, паническими атаками, БАР, а также предлагаем услуги детского психиатра, помогаем справиться с расстройствами пищевого поведения и детскими страхами. Стационар оборудован всем необходимым для комфортного пребывания пациентов любого возраста. Мы гордимся тем, что наша частная психоневрологическая клиника использует только доказательные методы и всегда готова принять пациентов на базе современного дневного стационара.</p>
+            <h2 class="h3">Безопасный путь к трезвости</h2>
+            <p>Любая зависимость требует системного медицинского вмешательства. Клиника предоставляет полный цикл помощи: от вывода из запоя до психотерапевтического сопровождения. Мы сохраняем полную конфиденциальность.</p>
+            <p>Клиника оборудована комфортными палатами, где проводится снятие абстинентного синдрома и детоксикация. Специалисты обеспечивают постоянный контроль за состоянием здоровья.</p>
+            <p>Если вам или вашим близким нужна квалифицированная медицинская помощь в сфере психиатрии или наркологии в Ростове-на-Дону, доверьтесь специалистам МПЦ «Исцеление».</p>
+          </div>
+        </div>
+      </div>
+      <section class="reviews">
+        <div class="reviews-container container"> 
+          <div class="reviews-box">
+            <div class="reviews-top">
+              <h2 class="h2 reviews-top__title">Истории выздоровления и отзывы</h2>
+              <p class="reviews-top__descr">Самая объективная оценка нашей работы — слова благодарности от людей, чью жизнь мы помогли изменить к лучшему. Мы ценим доверие пациентов, выбравших наш центр для решения своих проблем</p><a class="reviews-top__btn btn-arrow" href="#">Оставить отзыв</a>
+            </div>
+            <div class="reviews-content"></div>
+          </div>
+        </div>
+      </section>
+      <div class="faq">
+        <div class="faq-container container"> 
+          <div class="faq-box"> 
+            <div class="faq-top">
+              <h2 class="h2 faq-title">Вопрос – ответ</h2>
+              <button class="faq-btn btn-arrow" data-popup="callback">Оставить заявку</button>
+            </div>
+            <ul class="faq-list">
+              <li class="faq-list__item faq-item">
+                <div class="faq-item__title">К кому лучше записаться на первичный прием — к психиатру или психотерапевту?</div>
+                <div class="faq-item__content">Это зависит от вашего самочувствия и графика работы. Пребывание в дневном стационаре обычно занимает несколько часов в день — за это время вы успеваете пройти все назначенные медицинские процедуры и сеансы психотерапии. График посещений составляется индивидуально, поэтому многие пациенты комфортно совмещают терапию с работой или учебой. Если же вам требуется перерыв для полноценного восстановления, мы можем оформить официальный больничный лист. При этом мы строго соблюдаем анонимность: в документе не будет указан специфический диагноз, раскрывающий профиль клиники.</div>
+              </li>
+              <li class="faq-list__item faq-item">
+                <div class="faq-item__title">Нужно ли брать больничный лист для посещения дневного стационара?</div>
+                <div class="faq-item__content">Это зависит от вашего самочувствия и графика работы. Пребывание в дневном стационаре обычно занимает несколько часов в день — за это время вы успеваете пройти все назначенные медицинские процедуры и сеансы психотерапии. График посещений составляется индивидуально, поэтому многие пациенты комфортно совмещают терапию с работой или учебой. Если же вам требуется перерыв для полноценного восстановления, мы можем оформить официальный больничный лист. При этом мы строго соблюдаем анонимность: в документе не будет указан специфический диагноз, раскрывающий профиль клиники.</div>
+              </li>
+              <li class="faq-list__item faq-item">
+                <div class="faq-item__title">Как подготовиться к первой консультации в вашем центре?</div>
+                <div class="faq-item__content">Это зависит от вашего самочувствия и графика работы. Пребывание в дневном стационаре обычно занимает несколько часов в день — за это время вы успеваете пройти все назначенные медицинские процедуры и сеансы психотерапии. График посещений составляется индивидуально, поэтому многие пациенты комфортно совмещают терапию с работой или учебой. Если же вам требуется перерыв для полноценного восстановления, мы можем оформить официальный больничный лист. При этом мы строго соблюдаем анонимность: в документе не будет указан специфический диагноз, раскрывающий профиль клиники.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="information">
+        <div class="information-container container"> 
+          <div class="information-grid">
+            <h2 class="h2 information-top__title">Полезная информация от наших специалистов</h2>
+            <p class="information-top__descr">Врачи МПЦ «Исцеление» регулярно делятся своим профессиональным опытом, публикуя материалы о психическом здоровье, терапии неврозов и методах преодоления зависимостей. Читайте наш блог, чтобы лучше понимать себя и вовремя распознавать тревожные симптомы у близких</p><a class="information-top__btn btn-arrow" href="#">Читать все</a>
+            <div class="information-slider swiper">
+              <div class="information-slider__wrapper swiper-wrapper"><a class="information-slider__item inf-item swiper-slide" href="#">
+                  <div class="inf-item__img-box"><img class="inf-item__img" src="assets/images/information.jpg" alt=""></div>
+                  <div class="inf-item__box">
+                    <time class="inf-item__date" datetime="2026-10-26">26.08.2026</time>
+                    <p class="inf-item__title">Истории запойных алкоголиков: 8 рассказов о пути к восстановлению</p>
+                  </div></a><a class="information-slider__item inf-item swiper-slide" href="#">
+                  <div class="inf-item__img-box"><img class="inf-item__img" src="assets/images/information.jpg" alt=""></div>
+                  <div class="inf-item__box">
+                    <time class="inf-item__date" datetime="2026-10-26">26.08.2026</time>
+                    <p class="inf-item__title">Генетика и алкоголь</p>
+                  </div></a><a class="information-slider__item inf-item swiper-slide" href="#">
+                  <div class="inf-item__img-box"><img class="inf-item__img" src="assets/images/information.jpg" alt=""></div>
+                  <div class="inf-item__box">
+                    <time class="inf-item__date" datetime="2026-10-26">26.08.2026</time>
+                    <p class="inf-item__title">Истории запойных алкоголиков: 8 рассказов о пути к восстановлению</p>
+                  </div></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer class="footer">
       <div class="footer-container container">
         <div class="footer-grid">
