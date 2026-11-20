@@ -1,0 +1,10 @@
+//- Карточка врача в слайдере
+mixin staffItem(img, experience, lastName, firstName, descr)
+	a.staff-slider__item.staff-item.swiper-slide(href="#")
+		.staff-item__img-box
+			img.staff-item__img(src=img, alt="")
+			span.staff-item__experience= experience
+		span.staff-item__name
+			span= lastName
+			| #{firstName}
+		span.staff-item__descr= descr

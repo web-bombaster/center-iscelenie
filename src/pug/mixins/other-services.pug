@@ -1,0 +1,7 @@
+//- Пункт списка «Другие услуги»
+mixin otherServicesItem(name)
+	a.other-services__item(href="#")
+		span.other-services__item-name= name
+		span.other-services__arrow
+			svg.other-services__arrow-icon(aria-hidden="true")
+				use(href="assets/icons/symbol/sprite.svg#arrow-up-right")

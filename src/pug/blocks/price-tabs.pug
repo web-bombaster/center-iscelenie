@@ -1,93 +1,68 @@
+include ../mixins/price-tabs
+
 section.price-tabs
 	.price-tabs__container.container
 		.price-tabs__nav(role="tablist" aria-label="Категории услуг")
-			button.price-tabs__btn.is-active(type="button" role="tab" id="price-tab-consultations" aria-controls="price-panel-consultations" aria-selected="true" data-tab="consultations")
-				span.price-tabs__btn-text Консультации
-				span.price-tabs__chevron
-					svg.price-tabs__chevron-icon(aria-hidden="true")
-						use(href="assets/icons/symbol/sprite.svg#chevron-down")
-			button.price-tabs__btn(type="button" role="tab" id="price-tab-therapy" aria-controls="price-panel-therapy" aria-selected="false" tabindex="-1" data-tab="therapy")
-				span.price-tabs__btn-text Лечение зависимостей
-				span.price-tabs__chevron
-					svg.price-tabs__chevron-icon(aria-hidden="true")
-						use(href="assets/icons/symbol/sprite.svg#chevron-down")
-			button.price-tabs__btn(type="button" role="tab" id="price-tab-day" aria-controls="price-panel-day" aria-selected="false" tabindex="-1" data-tab="day")
-				span.price-tabs__btn-text Дневной стационар
-				span.price-tabs__chevron
-					svg.price-tabs__chevron-icon(aria-hidden="true")
-						use(href="assets/icons/symbol/sprite.svg#chevron-down")
-			button.price-tabs__btn(type="button" role="tab" id="price-tab-diagnostics" aria-controls="price-panel-diagnostics" aria-selected="false" tabindex="-1" data-tab="diagnostics")
-				span.price-tabs__btn-text Диагностика
-				span.price-tabs__chevron
-					svg.price-tabs__chevron-icon(aria-hidden="true")
-						use(href="assets/icons/symbol/sprite.svg#chevron-down")
+			+priceTab(
+				'Консультации',
+				'consultations',
+				true
+				)
+			+priceTab(
+				'Лечение зависимостей',
+				'therapy'
+				)
+			+priceTab(
+				'Дневной стационар',
+				'day'
+				)
+			+priceTab(
+				'Диагностика',
+				'diagnostics'
+				)
 
 		.price-tabs__panel.is-active(id="price-panel-consultations" role="tabpanel" aria-labelledby="price-tab-consultations" data-tab-panel="consultations")
 			h2.price-tabs__title.h2 Цены на консультации психиатра, нарколога, психотерапевта
 			.price-tabs__list
-				.price-tabs__row
-					.price-tabs__name
-						span.price-tabs__mark
-						span.price-tabs__name-text Первичная консультация главного врача, врача-психиатра, нарколога, психотерапевта Зубко М.М.
-					.price-tabs__meta
-						span.price-tabs__duration до 60 минут
-						span.price-tabs__price 6 000 ₽
-					.price-tabs__order-cell
-						button.price-tabs__order(type="button" data-popup="callback") записаться
-				.price-tabs__row
-					.price-tabs__name
-						span.price-tabs__mark
-						span.price-tabs__name-text Повторная консультация главного врача, врача-психиатра, нарколога, психотерапевта Зубко М.М.
-					.price-tabs__meta
-						span.price-tabs__duration до 30 минут
-						span.price-tabs__price 4 000 ₽
-					.price-tabs__order-cell
-						button.price-tabs__order(type="button" data-popup="callback") записаться
-				.price-tabs__row
-					.price-tabs__name
-						span.price-tabs__mark
-						span.price-tabs__name-text Консультация дежурного врача
-					.price-tabs__meta
-						span.price-tabs__duration до 50 минут
-						span.price-tabs__price 4 000 ₽
-					.price-tabs__order-cell
-						button.price-tabs__order(type="button" data-popup="callback") записаться
+				+priceRow(
+					'Первичная консультация главного врача, врача-психиатра, нарколога, психотерапевта Зубко М.М.',
+					'до 60 минут',
+					'6 000 ₽'
+					)
+				+priceRow(
+					'Повторная консультация главного врача, врача-психиатра, нарколога, психотерапевта Зубко М.М.',
+					'до 30 минут',
+					'4 000 ₽'
+					)
+				+priceRow(
+					'Консультация дежурного врача',
+					'до 50 минут',
+					'4 000 ₽'
+					)
 
 		.price-tabs__panel(id="price-panel-therapy" role="tabpanel" aria-labelledby="price-tab-therapy" aria-hidden="true" data-tab-panel="therapy")
 			h2.price-tabs__title.h2 Стоимость лечения алкоголизма и вывода из запоя
 			.price-tabs__list
-				.price-tabs__row.price-tabs__row--therapy
-					.price-tabs__name
-						span.price-tabs__mark
-						span.price-tabs__name-text Снятие алкогольной интоксикации
-					p.price-tabs__descr Инфузионная терапия длительностью 12 часов для стабилизации состояния
-					span.price-tabs__price 9 000 ₽
-					.price-tabs__order-cell
-						button.price-tabs__order(type="button" data-popup="callback") записаться
-				.price-tabs__row.price-tabs__row--therapy
-					.price-tabs__name
-						span.price-tabs__mark
-						span.price-tabs__name-text Прерывание запоя
-					p.price-tabs__descr Комплексное купирование абстиненции в условиях стационара (1 сутки)
-					span.price-tabs__price 13 000 ₽
-					.price-tabs__order-cell
-						button.price-tabs__order(type="button" data-popup="callback") записаться
-				.price-tabs__row.price-tabs__row--therapy
-					.price-tabs__name
-						span.price-tabs__mark
-						span.price-tabs__name-text Курс лечения последствий употребления ПАВ
-					p.price-tabs__descr Базовая программа реабилитации и медикаментозной поддержки (6 суток)
-					span.price-tabs__price 70 000 ₽
-					.price-tabs__order-cell
-						button.price-tabs__order(type="button" data-popup="callback") записаться
-				.price-tabs__row.price-tabs__row--therapy
-					.price-tabs__name
-						span.price-tabs__mark
-						span.price-tabs__name-text Расширенный курс терапии
-					p.price-tabs__descr Углубленная программа восстановления с психотерапией (9 суток)
-					span.price-tabs__price 120 000 ₽
-					.price-tabs__order-cell
-						button.price-tabs__order(type="button" data-popup="callback") записаться
+				+priceRowTherapy(
+					'Снятие алкогольной интоксикации',
+					'Инфузионная терапия длительностью 12 часов для стабилизации состояния',
+					'9 000 ₽'
+					)
+				+priceRowTherapy(
+					'Прерывание запоя',
+					'Комплексное купирование абстиненции в условиях стационара (1 сутки)',
+					'13 000 ₽'
+					)
+				+priceRowTherapy(
+					'Курс лечения последствий употребления ПАВ',
+					'Базовая программа реабилитации и медикаментозной поддержки (6 суток)',
+					'70 000 ₽'
+					)
+				+priceRowTherapy(
+					'Расширенный курс терапии',
+					'Углубленная программа восстановления с психотерапией (9 суток)',
+					'120 000 ₽'
+					)
 
 		.price-tabs__panel(id="price-panel-day" role="tabpanel" aria-labelledby="price-tab-day" aria-hidden="true" data-tab-panel="day")
 			h2.price-tabs__title.h2 Стоимость лечения в дневном стационаре
@@ -97,27 +72,26 @@ section.price-tabs
 						span.price-tabs__mark
 						span.price-tabs__name-text Лечение душевных расстройств в условиях дневного стационара
 					.price-tabs__options
-						.price-tabs__option
-							span.price-tabs__duration 10 дней
-							span.price-tabs__price 70 000 ₽
-						.price-tabs__option
-							span.price-tabs__duration 15 дней
-							span.price-tabs__price 90 000 ₽
-						.price-tabs__option
-							span.price-tabs__duration 30 дней
-							span.price-tabs__price 120 000 ₽
+						+priceOption(
+							'10 дней',
+							'70 000 ₽'
+							)
+						+priceOption(
+							'15 дней',
+							'90 000 ₽'
+							)
+						+priceOption(
+							'30 дней',
+							'120 000 ₽'
+							)
 					.price-tabs__order-cell
 						button.price-tabs__order(type="button" data-popup="callback") записаться
 
 		.price-tabs__panel(id="price-panel-diagnostics" role="tabpanel" aria-labelledby="price-tab-diagnostics" aria-hidden="true" data-tab-panel="diagnostics")
 			h2.price-tabs__title.h2 Цены на консультации психиатра, нарколога, психотерапевта
 			.price-tabs__list
-				.price-tabs__row
-					.price-tabs__name
-						span.price-tabs__mark
-						span.price-tabs__name-text Экспериментально-психологическое исследование
-					.price-tabs__meta
-						span.price-tabs__duration до 240 минут
-						span.price-tabs__price 10 000 ₽
-					.price-tabs__order-cell
-						button.price-tabs__order(type="button" data-popup="callback") записаться
+				+priceRow(
+					'Экспериментально-психологическое исследование',
+					'до 240 минут',
+					'10 000 ₽'
+					)

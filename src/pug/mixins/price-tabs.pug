@@ -1,0 +1,45 @@
+//- Кнопка-вкладка прайса
+mixin priceTab(label, id, active = false)
+	button.price-tabs__btn(
+		class=active ? 'is-active' : null
+		type="button"
+		role="tab"
+		id=`price-tab-${id}`
+		aria-controls=`price-panel-${id}`
+		aria-selected=active ? 'true' : 'false'
+		tabindex=active ? null : '-1'
+		data-tab=id
+	)
+		span.price-tabs__btn-text= label
+		span.price-tabs__chevron
+			svg.price-tabs__chevron-icon(aria-hidden="true")
+				use(href="assets/icons/symbol/sprite.svg#chevron-down")
+
+//- Строка прайса с длительностью и ценой
+mixin priceRow(name, duration, price)
+	.price-tabs__row
+		.price-tabs__name
+			span.price-tabs__mark
+			span.price-tabs__name-text= name
+		.price-tabs__meta
+			span.price-tabs__duration= duration
+			span.price-tabs__price= price
+		.price-tabs__order-cell
+			button.price-tabs__order(type="button" data-popup="callback") записаться
+
+//- Строка прайса с описанием (лечение зависимостей)
+mixin priceRowTherapy(name, descr, price)
+	.price-tabs__row.price-tabs__row--therapy
+		.price-tabs__name
+			span.price-tabs__mark
+			span.price-tabs__name-text= name
+		p.price-tabs__descr= descr
+		span.price-tabs__price= price
+		.price-tabs__order-cell
+			button.price-tabs__order(type="button" data-popup="callback") записаться
+
+//- Вариант срока и цены (дневной стационар)
+mixin priceOption(duration, price)
+	.price-tabs__option
+		span.price-tabs__duration= duration
+		span.price-tabs__price= price
