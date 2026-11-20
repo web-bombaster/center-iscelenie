@@ -125,21 +125,25 @@
             </svg>
           </button>
           <button class="header-bottom__feedback btn" data-popup="callback">Заказать звонок</button>
-          <form class="header-search header-bottom__search-form" id="header-search" action="/search/" method="get">
-            <div class="header-search__field">
-              <input class="header-search__input" type="search" name="q" placeholder="Услуга, направление, врач..." autocomplete="off" aria-label="Поиск по сайту">
-              <button class="header-search__submit" type="submit" aria-label="Найти">
-                <svg class="header-search__icon" aria-hidden="true">
-                  <use href="assets/icons/symbol/sprite.svg#search"></use>
-                </svg>
-              </button>
-            </div>
-            <ul class="header-search__list">
-              <li class="header-search__item"><a class="header-search__link" href="#">тревожные расстройства</a></li>
-              <li class="header-search__item"><a class="header-search__link" href="#">психотические расстройства</a></li>
-              <li class="header-search__item"><a class="header-search__link" href="#">расстройства пищевого поведения</a></li>
-            </ul>
-          </form>
+        </div>
+        <div class="header-search-panel">
+          <div class="container">
+            <form class="header-search header-bottom__search-form" id="header-search" action="/search/" method="get">
+              <div class="header-search__field">
+                <input class="header-search__input" type="search" name="q" placeholder="Услуга, направление, врач..." autocomplete="off" aria-label="Поиск по сайту">
+                <button class="header-search__submit" type="submit" aria-label="Найти">
+                  <svg class="header-search__icon" aria-hidden="true">
+                    <use href="assets/icons/symbol/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </div>
+              <ul class="header-search__list">
+                <li class="header-search__item"><a class="header-search__link" href="#">тревожные расстройства</a></li>
+                <li class="header-search__item"><a class="header-search__link" href="#">психотические расстройства</a></li>
+                <li class="header-search__item"><a class="header-search__link" href="#">расстройства пищевого поведения</a></li>
+              </ul>
+            </form>
+          </div>
           <button class="header-search__close" type="button" aria-label="Закрыть поиск">
             <svg class="header-search__close-icon" aria-hidden="true">
               <use href="assets/icons/symbol/sprite.svg#close"></use>
